@@ -1,0 +1,7 @@
+[build]
+    command = "ELEVENTY_ENV=prod npm run build"
+    publish = "dist"
+
+[dev]
+    command = "npm start"
+    autoLaunch = false
