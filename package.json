@@ -6,13 +6,26 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "debug": "DEBUG=* npm run build"
+    "debug": "DEBUG=* npm run build",
+    "clean": "npx gulp clean",
+    "prestart": "npm run clean"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
-    "@ampproject/eleventy-plugin-amp": "^0.5.3"
+    "@ampproject/eleventy-plugin-amp": "^0.5.3",
+    "autoprefixer": "^10.0.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.1.9",
+    "postcss-import-url": "^5.1.0",
+    "readable-stream": "^3.6.0",
+    "sass": "^1.29.0"
   }
 }

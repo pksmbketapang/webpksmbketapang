@@ -25,3 +25,6 @@ dist
 
 #debug.log
 debug.log
+
+#CSS output
+src/_includes/css/main.css

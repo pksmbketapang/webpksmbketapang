@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://unpkg.com/basscss@8.0.2/css/basscss.min.css');
+@import url('https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.css');
+
+:root {
+    --body-type: 'Inter', sans-serif;
+    --heading-type: 'Open Sans', sans-serif;
+    --accent-color: #f5ce00;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-type);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .headings {
+    font-family: var(--heading-type);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+#site-header {
+    width: 100vw;
+    z-index: 5;
+}
+
+#content-header {
+    img {
+        filter: brightness(50%);
+    }
+
+    #content-title {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+#content-main {
+    p, ol, ul {
+        font-size: 1.15rem;
+        line-height: 1.75rem;
+    }
+}
+
+#home-carousel {
+    amp-carousel {
+        border-radius: 10px;
+    }
+}
+
+#home-menu {
+    .home-menu-btn {
+        border-radius: 10px;
+        min-height: 100%;
+    }
+}
+
+#gallery-carousel {
+    img {
+        border-radius: 10px;
+    }
+}
+
+footer {
+    background-color: #000000;
+    border-top: 5px solid var(--accent-color);
+}
+
+.accented {
+    color: var(--accent-color);
+}
+
+.bg-accented {
+    background-color: var(--accent-color);
+}
+
+.bg-transparent {
+    background-color: #000000A0;
+}
