@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid')
     eleventyConfig.addLayoutAlias('layout', 'layouts/layout.liquid')
     eleventyConfig.addLayoutAlias('content', 'layouts/content.liquid')
+    eleventyConfig.addLayoutAlias('repportal', 'layouts/repportal.liquid')
 
     // build events
     eleventyConfig.on('beforeBuild', function() {

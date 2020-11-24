@@ -1,0 +1,38 @@
+---
+layout: layout
+---
+<div class="mxn3 bg-accented" style="height: 120px;"></div>
+
+<div class="mxn3 mb3 bg-accented">
+    <div id="aleg-portal-header" class="max-width-4 mx-auto clearfix flex flex-wrap content-stretch">
+        <div id="aleg-portal-image" class="col col-5" style="background-image: url('{{ image }}');"></div>
+        <div class="col col-7 flex flex-column justify-center px2">
+            <p class="mt0 mb1 h6 bold">{{ 'Kenali Wakil Kita' | upcase }}</p>
+            <h1 class="m0 h2 black">{{ title }}</h1>
+            <p class="mb0 mt1 h5">Anggota DPRD Kab. Kotim<br>Periode 2019-2024<br>Daerah Pemilihan I<br>Kec. Mentawa Baru Ketapang</p>
+        </div>
+    </div>
+</div>
+
+<div class="mxn1">
+    <!--Video Profil-->
+    <div id="aleg-portal-video" class="px1 pb3">
+        <h1 class="h2 mt0">Profil Singkat</h1>
+        <amp-youtube data-videoid="{{ profile_video_id }}" width="16" height="9" layout="responsive"></amp-youtube>
+        <p class="mt2 h5 bold"><a href="#">{{ "Halaman Profil" | upcase }}</a></p>
+    </div>
+
+    <!--Kabar Berita-->
+    <div id="aleg-portal-aktivitas" class="col col-12 px1 pb3">
+        <h1 class="h2 mt0">Kabar Terkini</h1>
+        {% for post in collections.news %}
+        <div class="col col-12 mb1">
+            <amp-img class="col col-4 rounded" src="{{ post.data.image }}" width="100" height="100" layout="responsive"></amp-img>
+            <div class="col col-8 pl1">
+                <h1 class="h4 mt0"><a href="{{ post.url }}">{{ post.data.title }}</a></h1>
+            </div>
+        </div>
+        {% endfor %}
+        <p class="col col-12 mt2 h5 bold"><a href="#">{{ "Semua Kabar Berita" | upcase }}</a></p>
+    </div>
+</div>

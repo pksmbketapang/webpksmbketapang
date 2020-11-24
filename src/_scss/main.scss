@@ -68,6 +68,28 @@ img {
     }
 }
 
+#aleg-portal-header {
+    min-height: 200px;
+    @media (min-width: 52em) {
+        min-height: 400px;
+    }
+}
+
+#aleg-portal-video {
+    amp-youtube {
+        clip-path: inset(0 0 0 0 round 10px);
+    }
+}
+
+#foto-aleg, #aleg-portal-image {
+    background-size: cover;
+    background-position: center;
+}
+
+#foto-aleg {
+    clip-path: inset(0 0 0 0 round 10px 0 0 10px);
+}
+
 #gallery-carousel {
     img {
         border-radius: 10px;
