@@ -5,7 +5,7 @@
             <amp-carousel type="slides" height="150" layout="fixed-height" loop>
                 {% for item in personalia %}
                 <div class="bg-accented home-menu-btn clearfix flex flex-wrap content-stretch">
-                    <a href="{{ item.url }}" id="foto-aleg" class="col col-4" style="background-image: url('{{ item.image }}');"></a>
+                    <a href="{{ item.url }}" id="foto-aleg" class="col col-4" style="background-image: url('{{ item.image | prepend: site.url }}');"></a>
                     <div class="col col-8 p2">
                         <p class="m0 h6 bold">{{ 'Kenali Wakil Kita' | upcase }}</p>
                         <h1 class="my1 h3"><a href="{{ item.url }}">{{ item.name }}</a></h1>
