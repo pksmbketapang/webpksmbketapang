@@ -1,0 +1,12 @@
+<amp-sidebar id="site-menu" layout="nodisplay" side="right">
+    <div class="px3">
+        <div class="flex items-center" style="height: 106px;">
+            <div class="ml-auto fill-black" role="button" on="tap:site-menu.close" tabindex="0">
+                {% include 'components/close-btn.liquid' %}
+            </div>
+        </div>
+        {% for item in sidebar-menu %}
+        <h1 class="h2 mt0"><a href="{{ item.link }}">{{ item.name }}</a></h1>
+        {% endfor %}
+    </div>
+</amp-sidebar>

@@ -1,5 +1,6 @@
 {
     "tags": "news",
     "layout": "content",
+    "headerScheme": "transparent",
     "permalink": "news/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html"
 }

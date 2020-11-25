@@ -2,11 +2,12 @@
 layout: base
 ---
 <header id="site-header" class="fixed top-0 overflow-hidden" amp-fx="float-in-top">
-    {% include components/header.liquid %}
+    {% include 'components/header.liquid' %}
 </header>
+{% include 'components/sidebar.liquid' %}
 <main id="site-body" class="px3 flex-auto">
     {{ content }}
 </main>
 <footer class="px3">
-    {% include components/footer.liquid %}
+    {% include 'components/footer.liquid' %}
 </footer>

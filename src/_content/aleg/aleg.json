@@ -1,5 +1,0 @@
-{
-    "tags": "aleg",
-    "layout": "repportal",
-    "permalink": "aleg/{{ page.fileSlug }}.html"
-}

@@ -8,11 +8,16 @@ module.exports = function(eleventyConfig) {
         "assets/img": "img"
     })
 
+    //liquid Options
+    eleventyConfig.setLiquidOptions({
+        dynamicPartials: true
+    })
+
     //layout aliases
-    eleventyConfig.addLayoutAlias('base', 'layouts/base.liquid')
-    eleventyConfig.addLayoutAlias('layout', 'layouts/layout.liquid')
-    eleventyConfig.addLayoutAlias('content', 'layouts/content.liquid')
-    eleventyConfig.addLayoutAlias('repportal', 'layouts/repportal.liquid')
+    eleventyConfig.addLayoutAlias('base', 'templates/base.liquid')
+    eleventyConfig.addLayoutAlias('layout', 'templates/layout.liquid')
+    eleventyConfig.addLayoutAlias('content', 'templates/content.liquid')
+    eleventyConfig.addLayoutAlias('page', 'templates/page.liquid')
 
     // build events
     eleventyConfig.on('beforeBuild', function() {

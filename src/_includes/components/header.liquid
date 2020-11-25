@@ -1,14 +1,14 @@
-<div class="fit flex items-center justify-start py2 px3 {% if page.url contains 'news' %} bg-transparent {% elsif page.url contains 'aleg' %} bg-accented {% else %} bg-white {% endif %}">
+<div class="fit flex items-center justify-start py2 px3 {% if headerScheme == 'transparent' %} bg-transparent {% elsif headerScheme == 'accented' %} bg-accented {% else %} bg-white {% endif %}">
     <div class="flex">
-        <a href="/"><amp-img src="/img/logo.jpg" width="50" height="71" layout="fixed"></amp-img></a>
-        <div class="flex-auto ml1 py1 {% if page.url contains 'news' %} white {% else %} black {% endif %}">
+        <a href="/"><amp-img src="{{ site.logo }}" width="50" height="71" layout="fixed"></amp-img></a>
+        <div class="flex-auto ml1 py1 {% if headerScheme == 'transparent' %} white {% else %} black {% endif %}">
             <p class="m0 headings h1 bold"><a href="/">{{ 'DPC PKS' | upcase }}</a></p>
             <p class="m0 headings h5"><a href="/">{{ 'Mentawa Baru Ketapang' | upcase }}</a></p>
         </div>
     </div>
-    <div class="ml-auto {% if page.url contains 'news' %} fill-white {% else %} fill-black {% endif %}">
-        <div>
-            {% include components/hamburger-btn.liquid %}
+    <div class="ml-auto {% if headerScheme == 'transparent' %} fill-white {% else %} fill-black {% endif %}">
+        <div role="button" on="tap:site-menu.open" tabindex="0">
+            {% include 'components/hamburger-btn.liquid' %}
         </div>
     </div>
 </div>

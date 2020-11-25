@@ -1,0 +1,22 @@
+---
+layout: layout
+permalink: index.html
+pagination:
+    data: collections.news
+    size: 5
+    reverse: true
+    alias: posts
+---
+<div class="clearfix flex flex-wrap content-stretch mxn1">
+    <!--top space-->
+    <div class="col col-12" style="height: 120px;"></div>
+
+    {% include 'components/home/home-carousel.liquid' %}
+
+    {% include 'components/home/home-menu.liquid' %}
+
+    {% include 'components/home/gallery-carousel.liquid' %}
+
+    {% include 'components/kabar-berita.liquid', includename: 'Kabar Terkini', includeurl: '/kabar' %}
+
+</div>

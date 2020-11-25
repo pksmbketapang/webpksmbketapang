@@ -37,6 +37,14 @@ img {
     z-index: 5;
 }
 
+#site-menu {
+    background-color: var(--accent-color);
+    width: 80vw;
+    @media (min-width: 52em) {
+        width: 350px;
+    }
+}
+
 #content-header {
     img {
         filter: brightness(50%);
@@ -68,7 +76,7 @@ img {
     }
 }
 
-#aleg-portal-header {
+#aleg-portal-header, #page-header {
     min-height: 200px;
     @media (min-width: 52em) {
         min-height: 400px;
