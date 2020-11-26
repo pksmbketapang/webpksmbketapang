@@ -1,10 +1,12 @@
 <!--Photo Gallery Carousel-->
 <div id="gallery-carousel" class="col col-12 px1 pb2">
-    <h1 class="h2 mt0">Kegiatan Dalam Gambar</h1>
+    <h1 class="h2 mt0">Galeri</h1>
     <amp-carousel type="carousel" height="200" layout="fixed-height">
-        <amp-img src="https://source.unsplash.com/200x200/daily?islam" width="200" height="200" ></amp-img>
-        <amp-img src="https://source.unsplash.com/200x200/daily?government" width="200" height="200" ></amp-img>
-        <amp-img src="https://source.unsplash.com/200x200/daily?british" width="200" height="200" ></amp-img>
+        {% for item in collections.gallery reversed %}
+        <a href="{{ item.url }}">
+            <amp-img src="{{ item.data.cover | prepend: site.url }}" width="200" height="200" ></amp-img>
+        </a>
+        {% endfor %}
     </amp-carousel>
     <p class="mt2 h5 bold"><a href="#">{{ "Semua Kegiatan" | upcase }}</a></p>
 </div>

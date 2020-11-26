@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    {% include 'components/head.liquid' %}
+</head>
+<body>
+    <amp-story standalone title="{{ title }}" poster-portrait-src="{% if cover %}{{ cover | prepend: site.url }}{% else %}{{ site.logo }}{% endif %}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
+        {% for item in gallery %}
+        {% increment page_counter %}
+        <amp-story-page id="page{{ page_counter }}">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="{{ cover | prepend: site.url }}" width="720" height="1280" layout="responsive" style="filter: blur(10px);"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer aspect-ratio="{{ item.aspect-ratio }}" template="vertical" class="p0">
+                {% if item.type == 'image' %}
+                <amp-img src="{{ item.media | prepend: site.url }}" width="{% if item.aspect-ratio == '16:9' %}1920{% else %}1080{% endif %}" height="{% if item.aspect-ratio == '9:16' %}1920{% else %}1080{% endif %}" layout="responsive"></amp-img>
+                {% elsif item.type == 'video' %}
+                <amp-video width="{% if item.aspect-ratio == '16:9' %}1920{% else %}1080{% endif %}" height="{% if item.aspect-ratio == '9:16' %}1920{% else %}1080{% endif %}" layout="responsive">
+                    <source src="{{ item.media | prepend: site.url }}" type="video/mp4">
+                </amp-video>
+                {% endif %}
+            </amp-story-grid-layer>
+            <amp-story-grid-layer class="gallery-caption p0" template="vertical">
+                <p class="h5 white bg-transparent p2">{{ item.caption }}</p>
+            </amp-story-grid-layer>
+        </amp-story-page>
+        {% endfor %}
+        <amp-story-bookend layout="nodisplay">
+            <script type="application/json">
+                {
+                    "bookendVersion": "v1.0",
+                    "components": [
+                        {
+                            "type": "heading",
+                            "text": "Tautan"
+                        },
+                        {
+                            "type": "cta-link",
+                            "links": [
+                                {
+                                    "text": "Beranda",
+                                    "url": "{{ site.url }}"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            </script>
+        </amp-story-bookend>
+    </amp-story>
+</body>
+</html>

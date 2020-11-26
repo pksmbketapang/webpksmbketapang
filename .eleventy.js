@@ -6,7 +6,8 @@ const cheerio = require('cheerio')
 module.exports = function(eleventyConfig) {
     //passthrough copy files
     eleventyConfig.addPassthroughCopy({
-        "assets/img": "img"
+        "assets/img": "img",
+        "assets/media": "media"
     })
 
     //liquid Options
@@ -19,6 +20,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('layout', 'templates/layout.liquid')
     eleventyConfig.addLayoutAlias('content', 'templates/content.liquid')
     eleventyConfig.addLayoutAlias('page', 'templates/page.liquid')
+    eleventyConfig.addLayoutAlias('amp-story', 'templates/amp-story.liquid')
 
     // build events
     eleventyConfig.on('beforeBuild', function() {
