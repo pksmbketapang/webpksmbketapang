@@ -1,14 +1,14 @@
 [
     {
-        "name": "Item 1",
+        "name": "Beranda",
+        "link": "/"
+    },
+    {
+        "name": "Wakil Kita",
         "link": "#"
     },
     {
-        "name": "Item 2",
-        "link": "#"
-    },
-    {
-        "name": "Item 3",
+        "name": "Tentang DPC",
         "link": "#"
     }
 ]
