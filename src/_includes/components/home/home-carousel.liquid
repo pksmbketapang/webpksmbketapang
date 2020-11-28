@@ -1,8 +1,11 @@
     <!--Headline Carousel-->
     <div id="home-carousel" class="col col-12 lg-col-8 px1 pb2">
         <amp-carousel type="slides" width="16" height="10" layout="responsive" loop>
-            <amp-img src="https://source.unsplash.com/1600x1000/daily?muslim" width="600" height="375" layout="responsive"></amp-img>
-            <amp-img src="https://source.unsplash.com/1600x1000/daily?london" width="600" height="375" layout="responsive"></amp-img>
-            <amp-img src="https://source.unsplash.com/1600x1000/daily?trump" width="600" height="375" layout="responsive"></amp-img>
+            {% for item in home-carousel %}
+            <a class="relative" href="{{ item.url }}" target="{%- if item.url contains 'http://' or item.url contains 'https://' -%} _blank {%- else -%} _self {%- endif -%}">
+                <amp-img src="{{ item.image }}" width="600" height="375" layout="responsive"></amp-img>
+                <h1 class="absolute bottom-0 h3 m0 p1 white bg-transparent" style="min-width: 100%;">{{ item.title }}</h1>
+            </a>
+            {% endfor %}
         </amp-carousel>
     </div>

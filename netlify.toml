@@ -5,3 +5,9 @@
 [dev]
     command = "npm start"
     autoLaunch = false
+
+[[redirects]]
+    from = "https://pksmbketapang.netlify.app/*"
+    to = "https://pksmbketapang.org/:splat"
+    status = 301
+    force = true

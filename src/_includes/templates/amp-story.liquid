@@ -4,7 +4,7 @@
     {% include 'components/head.liquid' %}
 </head>
 <body>
-    <amp-story standalone title="{{ title }}" poster-portrait-src="{% if cover %}{{ cover | prepend: site.url }}{% else %}{{ site.logo }}{% endif %}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
+    <amp-story standalone title="{{ title }}" poster-portrait-src="{%- if cover -%}{{ cover | prepend: site.url }}{%- else -%}{{ site.logo }}{%- endif -%}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
         {% for item in gallery %}
         {% increment page_counter %}
         <amp-story-page id="page{{ page_counter }}">
@@ -13,9 +13,9 @@
             </amp-story-grid-layer>
             <amp-story-grid-layer aspect-ratio="{{ item.aspect-ratio }}" template="vertical" class="p0">
                 {% if item.type == 'image' %}
-                <amp-img src="{{ item.media | prepend: site.url }}" width="{% if item.aspect-ratio == '16:9' %}1920{% else %}1080{% endif %}" height="{% if item.aspect-ratio == '9:16' %}1920{% else %}1080{% endif %}" layout="responsive"></amp-img>
+                <amp-img src="{{ item.media | prepend: site.url }}" width="{%- if item.aspect-ratio == '16:9' -%}1280{%- else -%}720{%- endif -%}" height="{%- if item.aspect-ratio == '9:16' -%}1280{%- else -%}720{%- endif -%}" layout="responsive"></amp-img>
                 {% elsif item.type == 'video' %}
-                <amp-video width="{% if item.aspect-ratio == '16:9' %}1920{% else %}1080{% endif %}" height="{% if item.aspect-ratio == '9:16' %}1920{% else %}1080{% endif %}" layout="responsive">
+                <amp-video width="{%- if item.aspect-ratio == '16:9' -%}1280{%- else -%}720{%- endif -%}" height="{%- if item.aspect-ratio == '9:16' -%}1280{%- else -%}720{%- endif -%}" layout="responsive" poster="{{ cover }}" autoplay>
                     <source src="{{ item.media | prepend: site.url }}" type="video/mp4">
                 </amp-video>
                 {% endif %}
