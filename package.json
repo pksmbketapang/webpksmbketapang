@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
-    "debug": "DEBUG=* npm run build",
+    "debug": "cross-env DEBUG=* npm run build",
     "clean": "npx gulp clean",
     "prestart": "npm run clean"
   },
@@ -18,6 +18,7 @@
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
     "autoprefixer": "^10.0.2",
     "cheerio": "^1.0.0-rc.3",
+    "cross-env": "^7.0.2",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-postcss": "^9.0.0",
