@@ -1,5 +1,5 @@
 [build]
-    command = "ELEVENTY_ENV=prod npm run build"
+    command = "cross-env ELEVENTY_ENV=prod npm run build"
     publish = "dist"
 
 [dev]
