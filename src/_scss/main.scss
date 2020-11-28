@@ -6,7 +6,7 @@
 :root {
     --body-type: 'Inter', sans-serif;
     --heading-type: 'Open Sans', sans-serif;
-    --accent-color: #f5ce00;
+    --accent-color: #FF5001;
 }
 
 * {
@@ -101,11 +101,6 @@ img {
     img {
         border-radius: 10px;
     }
-}
-
-footer {
-    background-color: #000000;
-    border-top: 5px solid var(--accent-color);
 }
 
 .accented {
