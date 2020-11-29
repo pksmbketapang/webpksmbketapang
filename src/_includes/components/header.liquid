@@ -1,6 +1,6 @@
 <div class="fit flex items-center justify-start py2 px3 {% if headerScheme == 'transparent' %} bg-transparent {% elsif headerScheme == 'accented' %} bg-accented {% else %} bg-white {% endif %}">
     <div class="flex">
-        <a href="/"><amp-img src="{% if headerScheme %} {{ site.logo_alt }} {% else %} {{ site.logo }} {% endif %}" width="50" height="71" layout="fixed"></amp-img></a>
+        <a href="/"><amp-img src="{%- if headerScheme -%} {{ site.logo_alt }} {%- else -%} {{ site.logo }} {%- endif -%}" width="50" height="71" layout="fixed"></amp-img></a>
         <div class="flex-auto ml1 py1 {% if headerScheme %} white {% else %} black {% endif %}">
             <p class="m0 headings h1 bold"><a href="/">{{ 'DPC PKS' | upcase }}</a></p>
             <p class="m0 headings h5"><a href="/">{{ 'Mentawa Baru Ketapang' | upcase }}</a></p>
