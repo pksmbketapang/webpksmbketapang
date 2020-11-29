@@ -1,6 +1,6 @@
 <!--Photo Gallery Carousel-->
-<div id="gallery-carousel" class="col col-12 px1 pb2">
-    <h1 class="h2 mt0">Galeri</h1>
+<div id="gallery-carousel" class="col col-12 px1 pb2 mt2">
+    <h1 class="h2 inline-block bg-accented white mt0 mb2 p1">Galeri Kegiatan</h1>
     <amp-carousel type="carousel" height="200" layout="fixed-height">
         {% for item in collections.gallery reversed %}
         <a href="{{ item.url }}">
@@ -8,5 +8,5 @@
         </a>
         {% endfor %}
     </amp-carousel>
-    <p class="mt2 h5 bold"><a href="#">{{ "Semua Kegiatan" | upcase }}</a></p>
+    <p class="mt2 h5 accented bold"><a href="#">{{ "Semua Kegiatan" | upcase }}</a></p>
 </div>

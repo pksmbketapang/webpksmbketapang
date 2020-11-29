@@ -9,8 +9,9 @@ module.exports = {
     current_env,
     isProd,
     title: "DPC PKS MB. Ketapang",
-    description: "Berkhidmat Untuk Rakyat",
-    logo: `${baseUrl}/img/logo.png`,
-    logo_alt: `${baseUrl}/img/logo-w.png`,
+    description: "Bersama Melayani Rakyat",
+    logo: `${baseUrl}/img/logo/logo.png`,
+    logo_alt: `${baseUrl}/img/logo/logo-w.png`,
+    logo_txt: `${baseUrl}/img/logo/logo-t.png`,
     url: baseUrl
 }

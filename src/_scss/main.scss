@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap');
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 @import url('https://unpkg.com/basscss@8.0.2/css/basscss.min.css');
-@import url('https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.css');
 
 :root {
     --body-type: 'Inter', sans-serif;
-    --heading-type: 'Open Sans', sans-serif;
-    --accent-color: #FF5001;
+    --heading-type: 'Montserrat', sans-serif;
+    --accent-color: #FE5000;
+    --black: #101820;
+    --black-transparent: #101820A0;
+    --white: #ffffff;
 }
 
 * {
@@ -111,8 +113,40 @@ img {
     background-color: var(--accent-color);
 }
 
+.fill-accented {
+    fill: var(--accent-color);
+}
+
+.black {
+    color: var(--black);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.fill-black {
+    fill: var(--black);
+}
+
+.border--black {
+    border-color: var(--black);
+}
+
+.white {
+    color: var(--white);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.fill-white {
+    fill: var(--white);
+}
+
 .bg-transparent {
-    background-color: #000000A0;
+    background-color: var(--black-transparent);
 }
 
 .gallery-caption {

@@ -1,6 +1,8 @@
 <!--Kabar Berita-->
-<div id="kabar-berita" class="col col-12 mxn1 px1 pb3">
-    <h1 class="h2 mt0">{{ includename }}</h1>
+<div id="kabar-berita" class="col col-12 mxn1 px1 pb2 mt2">
+    <div class="col col-12">
+        <h1 class="h2 inline-block bg-accented white mt0 mb2 mx1 p1">{{ includename }}</h1>
+    </div>
     {% include 'components/kabar-berita-content.liquid' %}
-    <p class="col col-12 mt2 h5 bold"><a href="{{ includeurl }}">{{ "Semua " | append: includename | upcase }}</a></p>
+    <p class="col col-12 mx1 mt1 accented h5 bold"><a href="{{ includeurl }}">{{ "Semua " | append: includename | upcase }}</a></p>
 </div>
