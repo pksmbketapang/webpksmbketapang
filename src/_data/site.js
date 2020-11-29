@@ -10,6 +10,7 @@ module.exports = {
     isProd,
     title: "DPC PKS MB. Ketapang",
     description: "Berkhidmat Untuk Rakyat",
-    logo: `${baseUrl}/img/logo.jpg`,
+    logo: `${baseUrl}/img/logo.png`,
+    logo_alt: `${baseUrl}/img/logo-w.png`,
     url: baseUrl
 }

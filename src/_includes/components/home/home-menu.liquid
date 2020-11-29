@@ -6,7 +6,7 @@
                 {% for item in personalia %}
                 <div class="bg-accented home-menu-btn clearfix flex flex-wrap content-stretch">
                     <a href="{{ item.url }}" id="foto-aleg" class="col col-4" style="background-image: url('{{ item.image | prepend: site.url }}');"></a>
-                    <div class="col col-8 p2">
+                    <div class="col col-8 p2 white">
                         <p class="m0 h6 bold">{{ 'Kenali Wakil Kita' | upcase }}</p>
                         <h1 class="my1 h3"><a href="{{ item.url }}">{{ item.name }}</a></h1>
                         <p class="m0 h5">Anggota DPRD Kab. Kotim<br>Periode 2019-2024</p>
@@ -18,7 +18,7 @@
         {% for link in homemenu %}
         <a href="{{ link.url }}" class="col col-6 px1 mb2">
             <div class="p2 bg-accented home-menu-btn flex items-center justify-center">
-                <h1 class="m0 h4 center">{{ link.name }}</h1>
+                <h1 class="m0 h4 white center">{{ link.name }}</h1>
             </div>
         </a>
         {% endfor %}
