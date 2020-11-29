@@ -13,7 +13,7 @@
         <div class="pb2">
             <h1 class="h5 white mt0 mb1">{{ 'Link Eksternal' | upcase }}</h1>
             {% for item in sidebar-links %}
-            <p class="h4 white mt0 mb1"><a href="{{ item.link }}">{{ item.name }}</a></p>
+            <p class="h4 white mt0 mb1"><a href="{{ item.link }}" target="_blank" rel="noreferrer">{{ item.name }}</a></p>
             {% endfor %}
         </div>
     </div>

@@ -1,9 +1,26 @@
 [
     {
+        "name": "M. Rudini Darwan Ali",
+        "description": "Kotim Bercahaya Mantap",
+        "explanation": "Calon Bupati Kotawaringin Timur<br>Periode 2021-2026<br>Nomor Urut 4",
+        "slug": "rudini",
+        "image": "/img/personalia/rudini.png",
+        "url": "/soon"
+    },
+    {
+        "name": "H. Samsudin",
+        "description": "Kotim Bercahaya Mantap",
+        "explanation": "Calon Wakil Bupati Kotawaringin Timur<br>Periode 2021-2026<br>Nomor Urut 4",
+        "slug": "samsudin",
+        "image": "/img/personalia/samsudin.png",
+        "url": "/soon"
+    },
+    {
         "name": "H. Supriyanto, SE, MM",
-        "position": "aleg",
+        "description": "Wakil Rakyat Kita",
+        "explanation": "Anggota DPRD Kab. Kotim<br>Periode 2019-2024",
         "slug": "supriyanto",
-        "image": "/img/aleg1.png",
-        "url": "/personalia/wakil"
+        "image": "/img/personalia/supriyanto.png",
+        "url": "/personalia/supriyanto"
     }
 ]

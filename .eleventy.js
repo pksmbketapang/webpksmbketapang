@@ -34,12 +34,26 @@ module.exports = function(eleventyConfig) {
         if (process.env.ELEVENTY_ENV === 'prod') {
             if (outputPath.endsWith('.html')) {
                 let $ = cheerio.load(content)
-                $('amp-img').each(function(){
+                $('amp-img').each(function() {
                     let imgUrl = $(this).attr('src')
                     let imgWidth = $(this).attr('width')
                     let imgHeight = $(this).attr('height')
                     imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
                     $(this).attr('src', imgUrl)
+                })
+                $('a.foto-personalia').each(function() {
+                    let imgUrl = $(this).css('background-image').split("'")[1]
+                    let imgWidth = 150
+                    let imgHeight = 150
+                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    $(this).css('background-image', `url('${imgUrl}')`)
+                })
+                $('div#aleg-portal-image').each(function() {
+                    let imgUrl = $(this).css('background-image').split("'")[1]
+                    let imgWidth = 200
+                    let imgHeight = 200
+                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    $(this).css('background-image', `url('${imgUrl}')`)
                 })
                 return $.html()
             }

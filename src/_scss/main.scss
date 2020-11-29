@@ -90,12 +90,12 @@ img {
     }
 }
 
-#foto-aleg, #aleg-portal-image {
+.foto-personalia, #aleg-portal-image {
     background-size: cover;
     background-position: center;
 }
 
-#foto-aleg {
+.foto-personalia {
     clip-path: inset(0 0 0 0 round 10px 0 0 10px);
 }
 

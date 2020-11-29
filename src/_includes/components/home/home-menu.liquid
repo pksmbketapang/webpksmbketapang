@@ -2,14 +2,14 @@
 <div id="home-menu" class="col col-12 sm-col-5 md-col-4 px1 pb2">
     <div class="clearfix flex flex-wrap content-stretch mxn1">
         <div class="col col-12 px1 mb2">
-            <amp-carousel type="slides" height="150" layout="fixed-height" loop>
+            <amp-carousel id="personalia" type="slides" height="180" layout="fixed-height" loop>
                 {% for item in personalia %}
                 <div class="bg-accented home-menu-btn clearfix flex flex-wrap content-stretch">
-                    <a href="{{ item.url }}" id="foto-aleg" class="col col-4" style="background-image: url('{{ item.image | prepend: site.url }}');"></a>
+                    <a href="{{ item.url }}" class="foto-personalia col col-4" style="background-image: url('{{ item.image | prepend: site.url }}');"></a>
                     <div class="col col-8 p2 white">
-                        <p class="m0 h6 bold">{{ 'Kenali Wakil Kita' | upcase }}</p>
+                        <p class="m0 h6 bold">{{ item.description | upcase }}</p>
                         <h1 class="my1 h3"><a href="{{ item.url }}">{{ item.name }}</a></h1>
-                        <p class="m0 h5">Anggota DPRD Kab. Kotim<br>Periode 2019-2024</p>
+                        <p class="m0 h5">{{ item.explanation }}</p>
                     </div>
                 </div>
                 {% endfor %}
