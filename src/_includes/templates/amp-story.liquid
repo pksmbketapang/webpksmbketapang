@@ -9,7 +9,7 @@
         {% increment page_counter %}
         <amp-story-page id="page{{ page_counter }}">
             <amp-story-grid-layer template="fill">
-                <amp-img src="{{ cover | prepend: site.url }}" width="720" height="1280" layout="responsive" style="filter: blur(10px);"></amp-img>
+                <amp-img src="{%- if item.type == 'image' -%}{{ item.media | prepend: site.url }}{%- else -%}{{ cover | prepend: site.url }}{%- endif -%}" width="720" height="1280" layout="responsive" style="filter: blur(10px);"></amp-img>
             </amp-story-grid-layer>
             <amp-story-grid-layer aspect-ratio="{{ item.aspect-ratio }}" template="vertical" class="p0">
                 {% if item.type == 'image' %}
