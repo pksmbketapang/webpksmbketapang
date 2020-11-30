@@ -16,7 +16,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^10.0.4",
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",
     "del": "^6.0.0",
