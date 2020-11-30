@@ -13,5 +13,6 @@ module.exports = {
     logo: `${baseUrl}/img/logo/logo.png`,
     logo_alt: `${baseUrl}/img/logo/logo-w.png`,
     logo_txt: `${baseUrl}/img/logo/logo-t.png`,
+    logo_txt_alt: `${baseUrl}/img/logo/logo-tw.png`,
     url: baseUrl
 }

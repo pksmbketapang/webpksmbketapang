@@ -1,0 +1,16 @@
+{% if site.isProd %}
+{% unless eleventyExcludeFromCollections %}
+<amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "G-TKFZ14S9EQ",
+        "config" : {
+          "G-TKFZ14S9EQ": { "groups": "default" }
+        }
+      }
+    }
+    </script>
+</amp-analytics>
+{% endunless %}
+{% endif %}
