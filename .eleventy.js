@@ -62,7 +62,7 @@ module.exports = function(eleventyConfig) {
                     let vWidth = $(this).attr('width')
                     let vHeight = $(this).attr('height')
                     $(this).attr('src', null)
-                    $(this).attr('poster', "https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.jpg")
+                    $(this).attr('poster', `https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.jpg`)
                     $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.webm" type="video/webm" />`)
                     $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.mp4" type="video/mp4" />`)
                     $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.ogv" type="video/ogg" />`)
