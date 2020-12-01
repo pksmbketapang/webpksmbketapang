@@ -11,7 +11,7 @@ pagination:
 <div id="gallery-page" class="clearfix mxn1">
     {% for post in posts %}
     <a href="{{ post.url }}" class="col col-12 md-col-2 lg-col-4 px1 mb2 relative">
-        <amp-img src="{{ post.data.cover }}" width="400" height="300" layout="responsive" style="filter: brightness(50%);"></amp-img>
+        <amp-img src="{{ post.data.cover | prepend: site.url }}" width="400" height="300" layout="responsive" style="filter: brightness(50%);"></amp-img>
         <h1 class="h3 center white m0 p1 absolute" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <span>{{ post.data.title }}</span>
         </h1>
