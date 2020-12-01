@@ -2,7 +2,7 @@
 <div id="home-menu" class="col col-12 sm-col-5 md-col-4 px1 pb2">
     <div class="clearfix flex flex-wrap content-stretch mxn1">
         <div class="col col-12 px1 mb2">
-            <amp-carousel id="personalia" type="slides" height="180" layout="fixed-height" loop>
+            <amp-carousel id="personalia" type="slides" height="180" layout="fixed-height" autoplay loop>
                 {% for item in personalia %}
                 <div class="bg-accented home-menu-btn clearfix flex flex-wrap content-stretch">
                     <a href="{{ item.url }}" class="foto-personalia col col-4" style="background-image: url('{{ item.image | prepend: site.url }}');"></a>

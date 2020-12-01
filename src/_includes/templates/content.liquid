@@ -4,10 +4,14 @@ layout: layout
 <div class="max-width-4 mx-auto">
     <div id="content-header" class="mxn3 relative">
         <amp-img src="{{ image }}" width="600" height="450" layout="responsive"></amp-img>
-        <h1 id="content-title" class="absolute px3 pb2 m0 h2 white">{{ title }}</h1>
+        <div id="content-title" class="absolute white px3 pb3">
+            <p class="mt0 mb1 h4 bold">{{ subtitle | upcase }}</p>
+            <h1 class="m0 h2 white">{{ title }}</h1>
+        </div>
     </div>
     <div id="content-main">
         {{ content }}
+        <p class="italic">{{ "Sumber: " }}<a href="{{ sumber.url }}">{{ sumber.title }}</a></p>
     </div>
 </div>
 

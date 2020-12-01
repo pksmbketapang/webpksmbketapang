@@ -5,10 +5,18 @@
     },
     {
         "name": "Wakil Kita",
-        "link": "#"
+        "link": "/soon"
     },
     {
         "name": "Tentang DPC",
-        "link": "#"
+        "link": "/soon"
+    },
+    {
+        "name": "Galeri",
+        "link": "/gallery"
+    },
+    {
+        "name": "Kabar Berita",
+        "link": "/news"
     }
 ]
