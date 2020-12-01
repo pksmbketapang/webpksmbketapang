@@ -40,21 +40,21 @@ module.exports = function(eleventyConfig) {
                     let imgUrl = $(this).attr('src')
                     let imgWidth = $(this).attr('width')
                     let imgHeight = $(this).attr('height')
-                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    if ($(this).parent().is('amp-story-grid-layer')) {
+                        imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_pad,b_auto:predominant,f_auto/` + imgUrl
+                    } else {
+                        imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    }
                     $(this).attr('src', imgUrl)
                 })
                 $('a.foto-personalia').each(function() {
                     let imgUrl = $(this).css('background-image').split("'")[1]
-                    let imgWidth = 150
-                    let imgHeight = 150
-                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_150,h_150,c_fill,f_auto/` + imgUrl
                     $(this).css('background-image', `url('${imgUrl}')`)
                 })
                 $('div#aleg-portal-image').each(function() {
                     let imgUrl = $(this).css('background-image').split("'")[1]
-                    let imgWidth = 200
-                    let imgHeight = 200
-                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
+                    imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_200,h_200,c_fill,f_auto/` + imgUrl
                     $(this).css('background-image', `url('${imgUrl}')`)
                 })
                 $('amp-video').each(function() {
@@ -63,9 +63,15 @@ module.exports = function(eleventyConfig) {
                     let vHeight = $(this).attr('height')
                     $(this).attr('src', null)
                     $(this).attr('poster', `https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.jpg`)
-                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.webm" type="video/webm" />`)
-                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.mp4" type="video/mp4" />`)
-                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.ogv" type="video/ogg" />`)
+                    if ($(this).parent().is('amp-story-grid-layer')) {
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_pad,b_blurred:400:10/media/${videoPath}.webm" type="video/webm" />`)
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_pad,b_blurred:400:10/media/${videoPath}.mp4" type="video/mp4" />`)
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_pad,b_blurred:400:10/media/${videoPath}.ogv" type="video/ogg" />`)
+                    } else {
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.webm" type="video/webm" />`)
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.mp4" type="video/mp4" />`)
+                        $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.ogv" type="video/ogg" />`)
+                    }
                 })
                 return $.html()
             }

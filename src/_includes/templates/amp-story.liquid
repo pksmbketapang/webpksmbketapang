@@ -9,13 +9,10 @@
         {% increment page_counter %}
         <amp-story-page id="page{{ page_counter }}">
             <amp-story-grid-layer template="fill">
-                <amp-img src="{%- if item.type == 'image' -%}{{ item.media | prepend: site.url }}{%- else -%}{{ cover | prepend: site.url }}{%- endif -%}" width="720" height="1280" layout="responsive" style="filter: blur(10px);"></amp-img>
-            </amp-story-grid-layer>
-            <amp-story-grid-layer aspect-ratio="{{ item.aspect-ratio }}" template="vertical" class="p0">
                 {% if item.type == 'image' %}
-                <amp-img src="{{ item.media | prepend: site.url }}" width="{%- if item.aspect-ratio == '16:9' -%}1280{%- else -%}720{%- endif -%}" height="{%- if item.aspect-ratio == '9:16' -%}1280{%- else -%}720{%- endif -%}" layout="responsive"></amp-img>
+                <amp-img src="{{ item.media | prepend: site.url }}" width="720" height="1280" layout="responsive"></amp-img>
                 {% elsif item.type == 'video' %}
-                <amp-video src="{{ item.media | prepend: site.url }}" width="{%- if item.aspect-ratio == '16:9' -%}1280{%- else -%}720{%- endif -%}" height="{%- if item.aspect-ratio == '9:16' -%}1280{%- else -%}720{%- endif -%}" layout="responsive" poster="{{ cover }}" autoplay></amp-video>
+                <amp-video src="{{ item.media | prepend: site.url }}" width="720" height="1280" layout="responsive" autoplay></amp-video>
                 {% endif %}
             </amp-story-grid-layer>
             <amp-story-grid-layer class="gallery-caption p0" template="vertical">
