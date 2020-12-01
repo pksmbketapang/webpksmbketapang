@@ -16,6 +16,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
+    "@quasibit/eleventy-plugin-sitemap": "^2.0.3",
     "autoprefixer": "^10.0.2",
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",

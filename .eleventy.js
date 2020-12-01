@@ -2,13 +2,15 @@ const execSync = require('child_process').execSync
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
 const htmlmin = require('html-minifier')
 const cheerio = require('cheerio')
+const sitemapPlugin = require('@quasibit/eleventy-plugin-sitemap')
 
 module.exports = function(eleventyConfig) {
     //passthrough copy files
     eleventyConfig.addPassthroughCopy({
         "assets/img": "img",
         "assets/media": "media",
-        "assets/favicons": "."
+        "assets/favicons": ".",
+        "assets/static": "."
     })
 
     //liquid Options
@@ -55,10 +57,26 @@ module.exports = function(eleventyConfig) {
                     imgUrl = `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_${imgWidth},h_${imgHeight},c_fill,f_auto/` + imgUrl
                     $(this).css('background-image', `url('${imgUrl}')`)
                 })
+                $('amp-video').each(function() {
+                    let videoPath = $(this).attr('src').replace('https://pksmbketapang.org/media/', '').slice(0, -4)
+                    let vWidth = $(this).attr('width')
+                    let vHeight = $(this).attr('height')
+                    $(this).attr('src', null)
+                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.webm" type="video/webm" />`)
+                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.mp4" type="video/mp4" />`)
+                    $(this).append(`<source src="https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_${vWidth},h_${vHeight},c_fill/media/${videoPath}.ogv" type="video/ogg" />`)
+                })
                 return $.html()
             }
         } else {
             return content
+        }
+    })
+
+    //Sitemap Plugin conf
+    eleventyConfig.addPlugin(sitemapPlugin, {
+        sitemap: {
+            hostname: "https://pksmbketapang.org"
         }
     })
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: kabar.html
+permalink: news/index.html
 title: Kabar Berita
 pagination:
     data: collections.news
