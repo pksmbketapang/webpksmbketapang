@@ -2,7 +2,7 @@ const execSync = require('child_process').execSync
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
 const htmlmin = require('html-minifier')
 const cheerio = require('cheerio')
-const sitemapPlugin = require('@quasibit/eleventy-plugin-sitemap')
+const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 
 module.exports = function(eleventyConfig) {
     //passthrough copy files
@@ -81,7 +81,7 @@ module.exports = function(eleventyConfig) {
     })
 
     //Sitemap Plugin conf
-    eleventyConfig.addPlugin(sitemapPlugin, {
+    eleventyConfig.addPlugin(sitemap, {
         sitemap: {
             hostname: "https://pksmbketapang.org"
         }
