@@ -4,15 +4,15 @@
     {% include 'components/head.liquid' %}
 </head>
 <body>
-    <amp-story standalone title="{{ title }}" poster-portrait-src="{%- if cover -%}{{ cover | prepend: site.url }}{%- else -%}{{ site.logo }}{%- endif -%}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
+    <amp-story standalone title="{{ title }}" poster-portrait-src="{%- if cover -%}{%- unless cover contains 'http://' or cover contains 'https://' -%}{{ cover | prepend: site.url }}{%- else -%}{{ cover }}{%- endunless -%}{%- else -%}{{ site.logo }}{%- endif -%}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
         {% for item in gallery %}
         {% increment page_counter %}
         <amp-story-page id="page{{ page_counter }}">
             <amp-story-grid-layer template="fill">
                 {% if item.type == 'image' %}
-                <amp-img src="{{ item.media | prepend: site.url }}" width="720" height="1280" layout="responsive"></amp-img>
+                <amp-img src="{%- unless item.media contains 'http://' or item.media contains 'https://' -%}{{ item.media | prepend: site.url }}{%- else -%}{{ item.media }}{%- endunless -%}" width="720" height="1280" layout="responsive"></amp-img>
                 {% elsif item.type == 'video' %}
-                <amp-video src="{{ item.media | prepend: site.url }}" width="720" height="1280" layout="responsive" autoplay></amp-video>
+                <amp-video src="{%- unless item.media contains 'http://' or item.media contains 'https://' -%}{{ item.media | prepend: site.url }}{%- else -%}{{ item.media }}{%- endunless -%}" width="720" height="1280" layout="responsive" autoplay></amp-video>
                 {% endif %}
             </amp-story-grid-layer>
             <amp-story-grid-layer class="gallery-caption p0" template="vertical">
