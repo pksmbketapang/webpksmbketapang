@@ -2,6 +2,7 @@
     "name": "DPC PKS Mentawa Baru Ketapang | Bersama Melayani Rakyat",
     "short_name": "PKS MBK",
     "start_url": "/",
+    "scope": "/",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
