@@ -31,6 +31,9 @@ module.exports = function(eleventyConfig) {
         execSync('npx gulp csscompile')
     })
 
+    eleventyConfig.on('afterBuild', function() {
+        execSync('npx gulp buildsw')
+    })
     //replace image links
     eleventyConfig.addTransform('replaceImgLinks', function(content, outputPath) {
         if (process.env.ELEVENTY_ENV === 'prod') {
