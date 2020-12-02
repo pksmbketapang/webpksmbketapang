@@ -9,4 +9,6 @@ pagination:
     alias: posts
 ---
 
+{% for post in posts %}
 {% include 'components/kabar-berita-content.liquid' %}
+{% endfor %}
