@@ -7,7 +7,7 @@
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy",
     "dry": "npx @11ty/eleventy --dryrun",
-    "debug": "cross-env DEBUG=* npm run build",
+    "debug": "cross-env DEBUG=* npm run build 2>&1 | tee debug.log",
     "clean": "npx gulp clean",
     "prestart": "npm run clean"
   },
