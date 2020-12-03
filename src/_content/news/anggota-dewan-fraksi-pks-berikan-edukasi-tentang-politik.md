@@ -8,6 +8,7 @@ sumber:
     url: https://sampit.prokal.co/read/news/31547-tingkatkan-peran-partisipasi-generasi-muda/
 tags:
     - lokal
+    - kotim
 ---
 
 PROKAL.CO,
