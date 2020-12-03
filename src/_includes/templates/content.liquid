@@ -10,14 +10,20 @@ layout: layout
             <p class="mt1 mb1 h4 center"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></p>
         </div>
         <amp-img src="{{ image.url }}" width="600" height="375" layout="responsive"></amp-img>
-        <p class="mt1 mute italic mb0"><small>{{ image.caption }}</small></p>
+        
     </div>
-    <div id="content-main">
-        {{ content }}
-        <p class="mute italic">{{ "Sumber: " }}<a href="{{ sumber.url }}" rel="noreferrer" target="_blank">{{ sumber.title }}</a></p>
-    </div>
-    <div>
-        {% include 'components/comments.liquid' %}
+    <div class="clearfix mxn1">
+        <div id="content-aside" class="col col-12 lg-col-3 px1">
+            <p class="mt1 mute italic my2"><small>{{ image.caption }}</small></p>
+            {% include 'components/social.liquid' %}
+        </div>
+        <div id="content-main" class="col col-12 lg-col-9 px1">
+            {{ content }}
+            <p class="mute italic">{{ "Sumber: " }}<a href="{{ sumber.url }}" rel="noreferrer" target="_blank">{{ sumber.title }}</a></p>
+            <div>
+                {% include 'components/comments.liquid' %}
+            </div>
+        </div>
     </div>
 </div>
 

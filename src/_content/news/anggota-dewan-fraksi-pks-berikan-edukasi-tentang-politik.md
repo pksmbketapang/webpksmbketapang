@@ -4,7 +4,7 @@ subtitle: Tingkatkan Peran Partisipasi Generasi Muda
 date: 2020-11-30
 image: 
     url: https://images2.prokal.co/websampit/files/berita/2020/11/30/c01e960b6d1ed2cf8869610e94d27b92.jpg
-    caption: "Presiden PKS Ahmad Syaikhu. (Hilal/PKSFoto)"
+    caption: 'EDUKASI: DPC PKS Kecamatan Mentawa Baru Ketapang, menggelar diskusi santai bertema "Ngopi Bareng Aleg" di salah satu Cafe di Kota Sampit, Sabtu (28/11) malam.( HENY/RADAR SAMPIT)'
 sumber: 
     title: prokal.co
     url: https://sampit.prokal.co/read/news/31547-tingkatkan-peran-partisipasi-generasi-muda/
@@ -24,6 +24,10 @@ Ketua DPC PKS Mentawa Baru Ketapang Kotim Abdul Muis mengatakan, dewasa ini gene
 Abdul Muis mengatakan, penyampaian aspirasi masyarakat merupakan salah satu bentuk dukungan untuk mempercepat pembangunan di Kotim seperti dibidang pendidikan, infrastruktur,perekonomian dan lain-lain.
 
 ”Aspirasi masyarakat bagi kami sangat penting menentukan langkah prioritas pembangunan dan yang terpenting PKS bekerja bersama rakyat," ujarnya.
+
+<amp-story-player layout="responsive" height="1" width="1">
+    <a href="https://pksmbketapang.org/gallery/2020/11/ngopi-bareng-aleg-perdana-dan-launching-website-pksmbketapang-org.html" title="Ngopi Bareng Aleg Edisi Perdana dan Launching Website pksmbketapang.org"></a>
+</amp-story-player>
 
 Selama diskusi berlangsung kegiatan dipandu oleh Raden Ilham Sastra selaku kader muda PKS sekaligus Ketua Panitia Pelaksana Kegiatan. Kegiatan diskusi semakin berisi dengan hadirnya dua pemateri yakni Anggota DPRD Kotim Fraksi Dapil MB Ketapang Fraksi PKS Supriyanto dan Anggota DPRD Seruyan Denni Rahmadani.
 
