@@ -16,5 +16,8 @@ layout: layout
         {{ content }}
         <p class="mute italic">{{ "Sumber: " }}<a href="{{ sumber.url }}" rel="noreferrer" target="_blank">{{ sumber.title }}</a></p>
     </div>
+    <div>
+        {% include 'components/comments.liquid' %}
+    </div>
 </div>
 
