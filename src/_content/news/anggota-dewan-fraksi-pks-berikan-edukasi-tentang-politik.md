@@ -6,6 +6,8 @@ image: https://images2.prokal.co/websampit/files/berita/2020/11/30/c01e960b6d1ed
 sumber: 
     title: prokal.co
     url: https://sampit.prokal.co/read/news/31547-tingkatkan-peran-partisipasi-generasi-muda/
+tags:
+    - lokal
 ---
 
 PROKAL.CO,

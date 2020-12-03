@@ -63,7 +63,7 @@ function buildsw(cb) {
 const del = require('del')
 
 function clean(cb) {
-    del(['dist', 'debug.log', 'src/_includes/css'])
+    del(['dist', 'debug.log', 'src/_includes/css/main.css'])
     cb()
 }
 

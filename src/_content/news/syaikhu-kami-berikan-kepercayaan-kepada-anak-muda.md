@@ -6,6 +6,8 @@ image: https://pks.id/contentAsset/resize-image/746b83ab-2fbf-4d55-aaa3-a8d650c1
 sumber: 
     title: pks.id
     url: https://pks.id/content/jadikan-gamal-albinsaid-pengurus-dpp-pks-syaikhu-kami-berikan-kepercayaan-kepada-anak-muda
+tags:
+    - pusat
 ---
 
 Bandung -- Presiden Partai keadilan Sejahtera Ahmad Syaikhu mengungkapkan akan memberikan kepercayaan untuk pemuda yang memiliki potensi agar siap menjadi pemimpin.

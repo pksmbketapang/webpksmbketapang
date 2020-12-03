@@ -6,6 +6,8 @@ image: https://pks.id/contentAsset/resize-image/4f594707-c7a0-414c-9a79-733a672f
 sumber: 
     title: pks.id
     url: https://pks.id/content/mabruri-tak-hanya-untuk-anak-muda-tapi-juga-emak-emak-silakan-masuk-pks
+tags:
+    - pusat
 ---
 
 Bandung (28/11) - Partai Keadilan Sejahtera memberikan kesempatan semua komponen untuk bergabung. Tidak hanya memberikan kesempatan kepada para pemuda, melainkan juga emak-emak.

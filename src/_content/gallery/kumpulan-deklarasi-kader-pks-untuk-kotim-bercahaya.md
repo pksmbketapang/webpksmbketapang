@@ -1,6 +1,5 @@
 ---
 title: Kumpulan Deklarasi Kader dan Simpatisan PKS Kotim untuk Kotim Bercahaya Mantap!
-cover: '/img/content/kotim-bercahaya.jpg'
 date: 2020-11-29
 gallery: 
     - type: video

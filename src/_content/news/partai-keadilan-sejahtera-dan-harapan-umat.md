@@ -6,6 +6,8 @@ image: https://nusantarafoundation.org/img/content/1564859624.jpg
 sumber: 
     title: WhatsApp
     url: "#"
+tags:
+    - pusat
 ---
 
 *New York, 30 November 2020*

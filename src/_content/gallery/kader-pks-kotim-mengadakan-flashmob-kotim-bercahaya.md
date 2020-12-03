@@ -1,6 +1,5 @@
 ---
 title: Kader PKS Kotim mengadakan flashmob Kotim Bercahaya
-cover: '/img/content/flashmob.jpeg'
 date: 2020-12-01
 gallery: 
     - type: video

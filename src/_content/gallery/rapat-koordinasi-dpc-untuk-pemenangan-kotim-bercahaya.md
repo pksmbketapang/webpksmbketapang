@@ -1,6 +1,5 @@
 ---
 title: Rapat Koordinasi DPC Untuk Pemenangan Kotim Bercahaya
-cover: '/img/content/rapat-koordinasi.jpg'
 date: 2020-10-10
 gallery: 
     - type: image

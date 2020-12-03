@@ -4,7 +4,7 @@
     {% include 'components/head.liquid' %}
 </head>
 <body>
-    <amp-story standalone title="{{ title }}" poster-portrait-src="{%- if cover -%}{%- unless cover contains 'http://' or cover contains 'https://' -%}{{ cover | prepend: site.url }}{%- else -%}{{ cover }}{%- endunless -%}{%- else -%}{{ site.logo }}{%- endif -%}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
+    <amp-story standalone title="{{ title }}" poster-portrait-src="{%- if gallery[0].media contains 'http://' or gallery[0].media contains 'https://' -%}{{ gallery[0].media }}{%- else -%}{{ gallery[0].media | prepend: site.url }}{%- endif -%}" publisher="{{ site.title }}" publisher-logo-src="{{ site.logo }}">
         {% for item in gallery %}
         {% increment page_counter %}
         <amp-story-page id="page{{ page_counter }}">
@@ -49,7 +49,7 @@
                         {
                             "type": "small",
                             "title": "{{ post.data.title }}",
-                            "image": "{{ post.data.cover }}",
+                            "image": "{{ post.data.gallery[0].media }}",
                             "url": "{{ post.url }}"
                         },
                         {%- endunless -%}

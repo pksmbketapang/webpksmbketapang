@@ -6,6 +6,8 @@ image: https://pks.id/contentAsset/resize-image/093dc545-8ac0-4721-a61e-10447cda
 sumber: 
     title: pks.id
     url: https://pks.id/content/tanggapi-tragedi-kemanusiaan-di-sigi-pks-menyakiti-dan-mengoyak-persatuan-bangsa
+tags:
+    - pusat
 ---
 
 Jakarta -- Presiden Partai Keadilan Sejahtera (PKS) Ahmad Syaikhu menyampaikan ucapan belasungkawa mendalam terhadap tragedi kemanusiaan di Sigi, Sulawesi Tengah.

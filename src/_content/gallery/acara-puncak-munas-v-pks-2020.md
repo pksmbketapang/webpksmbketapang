@@ -1,6 +1,5 @@
 ---
 title: Acara Puncak Munas V PKS 2020
-cover: 'https://pks.id/contentAsset/resize-image/38bed324-5daf-4a55-b531-75cf57503bb3/item6Image?w=1024&ex=.jpg'
 date: 2020-11-29
 gallery: 
     - type: image
