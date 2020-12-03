@@ -120,11 +120,11 @@ module.exports = function(eleventyConfig) {
                     function newImgUrl(entry) {
                         let imgUrl = _.get(entry, 'image')
                         if (imgUrl.startsWith('http://') || imgUrl.startsWith('https://') ) {
-                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_50,h_50,c_fill,f_auto/${imgUrl}`
+                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_100,h_100,c_fill,f_auto/${imgUrl}`
                         } else if (imgUrl.endsWith('.mp4')) {
-                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_50,h_50,c_fill,f_auto${imgUrl.replace('.mp4', '.jpg')}`
+                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/video/upload/w_100,h_100,c_fill,f_auto${imgUrl.replace('.mp4', '.jpg')}`
                         } else {
-                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_50,h_50,c_fill,f_auto/https://pksmbketapang.org${imgUrl}`
+                            return `https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_100,h_100,c_fill,f_auto/https://pksmbketapang.org${imgUrl}`
                         }
                     }
                     _.each(_.filter(bookend.components, _.matches({ 'type': 'small' })), entry => _.set(entry, 'image', newImgUrl(entry)))                    
