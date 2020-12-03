@@ -2,12 +2,15 @@
 title: Pimpin PKS dengan Cara Asyik
 subtitle: Ngobrol Santai Presiden Ahmad Syaikhu
 date: 2020-11-30
-image: https://pks.id/contentAsset/resize-image/23ed441f-9666-4f90-acd7-f79d5fcb9df5/image/?byInode=true&h=768
+image: 
+    url: https://pks.id/contentAsset/resize-image/23ed441f-9666-4f90-acd7-f79d5fcb9df5/image/?byInode=true&h=768
+    caption: "Presiden PKS Ahmad Syaikhu saat ngobrol santai dengan tim media PKS, Bandung, Ahad (29/11/2020). (Daru/PKSFoto)"
 sumber: 
     title: pks.id
     url: https://pks.id/content/ngobrol-santai-presiden-ahmad-syaikhu-pimpin-pks-dengan-cara-asyik
 tags:
     - pusat
+    - nasional
 ---
 
 Bandung (29/11) -- Usai agenda Munas V PKS Presiden Partai Keadilan Sejahtera Ahmad Syaikhu (Asyik) menyempatkan diri untuk "Ngobrol Santai" bersama tim media PKS. Ternyata sosok Asyik memiliki hobi bernyanyi, gowes, dan produktif dalam menulis. Berikut perbicangan Presiden Asyik bersama PKS.id dan PKS TV:

@@ -1,6 +1,9 @@
 ---
 title: Kumpulan Deklarasi Kader dan Simpatisan PKS Kotim untuk Kotim Bercahaya Mantap!
 date: 2020-11-29
+tags:
+  - lokal
+  - kotim
 gallery: 
     - type: video
       media: '/media/content/deklarasi/deklarasi-ngopi-bareng-aleg.mp4'

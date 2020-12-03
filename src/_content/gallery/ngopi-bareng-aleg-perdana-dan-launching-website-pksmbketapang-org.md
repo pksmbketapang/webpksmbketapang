@@ -1,6 +1,9 @@
 ---
 title: Ngopi Bareng Aleg Edisi Perdana dan Launching Website pksmbketapang.org
 date: 2020-11-29
+tags:
+  - lokal
+  - kotim
 gallery: 
   - type: image
     media: '/img/content/ngopi-bareng-aleg-1/1.jpeg'

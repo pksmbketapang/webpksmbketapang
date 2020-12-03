@@ -2,11 +2,14 @@
 title: "Mabruri: Tak Hanya untuk Anak Muda Tapi Juga Emak-Emak, Silakan Masuk PKS!"
 subtitle: PKS memberikan kesempatan semua untuk bergabung
 date: 2020-11-29
-image: https://pks.id/contentAsset/resize-image/4f594707-c7a0-414c-9a79-733a672f340d/image/?byInode=true&h=768
+image: 
+    url: https://pks.id/contentAsset/resize-image/4f594707-c7a0-414c-9a79-733a672f340d/image/?byInode=true&h=768
+    caption: "Ketua Bidang Humas DPP PKS Ahmad Mabruri. (Daru/PKSFoto)"
 sumber: 
     title: pks.id
     url: https://pks.id/content/mabruri-tak-hanya-untuk-anak-muda-tapi-juga-emak-emak-silakan-masuk-pks
 tags:
+    - nasional
     - pusat
 ---
 

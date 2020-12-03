@@ -2,11 +2,14 @@
 title: "PKS: Menyakiti dan Mengoyak Persatuan Bangsa!"
 subtitle: Tanggapi Tragedi Kemanusiaan di Sigi
 date: 2020-12-01
-image: https://pks.id/contentAsset/resize-image/093dc545-8ac0-4721-a61e-10447cda1182/image/?byInode=true&h=768
+image: 
+    url: https://pks.id/contentAsset/resize-image/093dc545-8ac0-4721-a61e-10447cda1182/image/?byInode=true&h=768
+    caption: "Presiden PKS Ahmad Syaikhu. (Hilal/PKSFoto)"
 sumber: 
     title: pks.id
     url: https://pks.id/content/tanggapi-tragedi-kemanusiaan-di-sigi-pks-menyakiti-dan-mengoyak-persatuan-bangsa
 tags:
+    - nasional
     - pusat
 ---
 

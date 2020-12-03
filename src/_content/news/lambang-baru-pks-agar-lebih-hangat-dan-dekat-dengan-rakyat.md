@@ -2,7 +2,9 @@
 title: "Lambang Baru PKS, Agar Lebih Hangat dan Dekat dengan Rakyat"
 subtitle: PKS Kalteng
 date: 2020-12-03
-image: https://jurnalborneo.co.id/wp-content/uploads/HERU-HIDAYAT-750x375.jpeg
+image: 
+    url: https://jurnalborneo.co.id/wp-content/uploads/HERU-HIDAYAT-750x375.jpeg
+    caption: "Ketua DPW PKS Kalteng Heru Hidayat."
 sumber: 
     title: jurnalborneo.co.id
     url: https://jurnalborneo.co.id/berita/ambang-baru-pks-agar-lebih-hangat-dan-dekat-dengan-rakyat/

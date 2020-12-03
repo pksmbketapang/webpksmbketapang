@@ -2,11 +2,14 @@
 title: Partai Keadilan Sejahtera & Harapan Umat
 subtitle: Imam Shamsi Ali
 date: 2020-11-30
-image: https://nusantarafoundation.org/img/content/1564859624.jpg
+image: 
+    url: https://nusantarafoundation.org/img/content/1564859624.jpg
+    caption: Imam Shamsi Ali, diaspora Indonesia di New York, USA
 sumber: 
     title: WhatsApp
     url: "#"
 tags:
+    - nasional
     - pusat
 ---
 

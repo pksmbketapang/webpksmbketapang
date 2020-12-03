@@ -2,7 +2,9 @@
 title: Anggota Dewan Kotim Fraksi PKS Berikan Edukasi tentang Politik
 subtitle: Tingkatkan Peran Partisipasi Generasi Muda
 date: 2020-11-30
-image: https://images2.prokal.co/websampit/files/berita/2020/11/30/c01e960b6d1ed2cf8869610e94d27b92.jpg
+image: 
+    url: https://images2.prokal.co/websampit/files/berita/2020/11/30/c01e960b6d1ed2cf8869610e94d27b92.jpg
+    caption: "Presiden PKS Ahmad Syaikhu. (Hilal/PKSFoto)"
 sumber: 
     title: prokal.co
     url: https://sampit.prokal.co/read/news/31547-tingkatkan-peran-partisipasi-generasi-muda/

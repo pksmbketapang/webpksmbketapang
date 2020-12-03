@@ -9,6 +9,7 @@
     --black: #101820;
     --black-transparent: #101820A0;
     --white: #ffffff;
+    --gray: #555555;
 }
 
 * {
@@ -18,6 +19,7 @@
 body {
     font-family: var(--body-type);
     min-height: 100vh;
+    color: var(--black);
 }
 
 h1, h2, h3, h4, h5, h6, .headings {
@@ -147,4 +149,8 @@ img {
 
 .gallery-caption {
     align-content:end;
+}
+
+.mute {
+    color: var(--gray);
 }

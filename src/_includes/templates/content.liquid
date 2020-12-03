@@ -7,9 +7,10 @@ layout: layout
         <div id="content-title" class="mb2">
             <p class="mt0 mb1 accented h5 bold center">{{ subtitle | upcase }}</p>
             <h1 class="m0 center">{{ title }}</h1>
-            <p class="mt1 mb1 h4 center">{{ page.date }}</p>
+            <p class="mt1 mb1 h4 center"><time datetime="{{ page.date | dateIso }}">{{ page.date | dateReadable }}</time></p>
         </div>
-        <amp-img src="{{ image }}" width="600" height="375" layout="responsive"></amp-img>
+        <amp-img src="{{ image.url }}" width="600" height="375" layout="responsive"></amp-img>
+        <p class="mt1 mute italic mb0"><small>{{ image.caption }}</small></p>
     </div>
     <div id="content-main">
         {{ content }}

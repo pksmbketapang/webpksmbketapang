@@ -2,8 +2,9 @@ const execSync = require('child_process').execSync
 const ampPlugin = require('@ampproject/eleventy-plugin-amp')
 const htmlmin = require('html-minifier')
 const cheerio = require('cheerio')
-const sitemap = require('@quasibit/eleventy-plugin-sitemap')
 const typeset = require('eleventy-plugin-typeset')
+const moment = require('moment')
+moment.locale('id')
 const _ = require('lodash')
 
 module.exports = function(eleventyConfig) {
@@ -29,6 +30,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addLayoutAlias('amp-story', 'templates/amp-story.liquid')
 
     //filters
+    eleventyConfig.addFilter('dateIso', function(date){
+        return moment(date).toISOString()
+    })
+
+    eleventyConfig.addFilter('dateReadable', function(date){
+        return moment(date).format('LL')
+    })
 
     // deep merge
     eleventyConfig.setDataDeepMerge(true)
@@ -135,13 +143,6 @@ module.exports = function(eleventyConfig) {
             }
         } else {
             return content
-        }
-    })
-
-    //Sitemap Plugin conf
-    eleventyConfig.addPlugin(sitemap, {
-        sitemap: {
-            hostname: "https://pksmbketapang.org"
         }
     })
 
