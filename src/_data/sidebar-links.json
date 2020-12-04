@@ -18,5 +18,9 @@
     {
         "name": "DPRD Kab. Kotim",
         "link": "https://dprd-kotimkab.go.id/"
+    },
+    {
+        "name": "Kode Sumber",
+        "link": "https://github.com/pksmbketapang/webpksmbketapang/"
     }
 ]

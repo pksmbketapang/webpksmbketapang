@@ -4,7 +4,8 @@
 
 exports.data = {
     permalink: '/test.json',
-    layout: false
+    layout: false,
+    eleventyExcludeFromCollections: true
 }
 
 exports.render = (data) => {

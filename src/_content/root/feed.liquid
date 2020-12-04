@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
     <id>{{ site.url }}</id>
     {%- for post in collections.feed reversed -%}
     <entry>
-        <title>{{ post.data.title }}</title>
+        <title>{{ post.data.title | escape }}</title>
         <link href="{{ post.url | prepend: site.url }}" />
         <id>{{ post.url | prepend: site.url }}</id>
         <published>{{ post.date | dateIso }}</published>
