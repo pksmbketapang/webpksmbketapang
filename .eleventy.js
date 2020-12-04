@@ -141,6 +141,7 @@ module.exports = function(eleventyConfig) {
 
                 return $.html()
             }
+            return content
         } else {
             return content
         }
@@ -152,20 +153,18 @@ module.exports = function(eleventyConfig) {
     //minify output
     eleventyConfig.addTransform('minify', function(content, outputPath) {
         if (outputPath.endsWith('.html')) {
-            if (process.env.ELEVENTY_ENV == 'prod') {
-                let minified = htmlmin.minify(content, {
-                    useShortDoctype: true,
-                    removeComments: true,
-                    collapseWhitespace: true,
-                    minifyJS: true,
-                    minifyCSS: true,
-                    processScripts: [
-                        "text/javascript",
-                        "application/ld+json"
-                    ]
-                })
-                return minified
-            }
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+                minifyJS: true,
+                minifyCSS: true,
+                processScripts: [
+                    "text/javascript",
+                    "application/ld+json"
+                ]
+            })
+            return minified
         }
         return content
     })
