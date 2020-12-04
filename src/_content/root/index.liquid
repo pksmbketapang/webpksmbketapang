@@ -13,6 +13,8 @@ permalink: index.html
     {% include 'components/home/gallery-carousel.liquid' %}
 
     {% assign posts = collections.news | sort: date | reverse %}
-    {% include 'components/kabar-berita.liquid', includename: 'Kabar Terkini', includeurl: '/news' %}
+    {% include 'components/home/kabar-berita.liquid', includename: 'Kabar Terkini', includeurl: '/news' %}
+
+    {% include 'components/home/links-to-media.liquid' %}
 
 </div>

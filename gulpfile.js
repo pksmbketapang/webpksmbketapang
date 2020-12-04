@@ -15,7 +15,7 @@ function csscompile() {
 
     const processors = [
         autoprefixer,
-        importcss
+        importcss({modernBrowser: true})
     ]
 
     return pipeline(
