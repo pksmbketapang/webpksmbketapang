@@ -7,5 +7,11 @@
             <p class="mt0 h5"><a href="{{ item.link }}" target="_blank" rel="noreferrer">{{ item.title }}</a></p>
         </div>
         {% endfor %}
+        {% for item in content.news_links offset: 5 limit: 5 %}
+        <div class="mb2 xs-hide sm-hide md-hide">
+            <p class="mt0 mb1 h6 bold accented"><a href="{{ item.source.href }}" target="_blank" rel="noreferrer">{{ item.source.title | upcase }}</a></p>
+            <p class="mt0 h5"><a href="{{ item.link }}" target="_blank" rel="noreferrer">{{ item.title }}</a></p>
+        </div>
+        {% endfor %}
     </div>
 </div>

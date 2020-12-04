@@ -14,8 +14,8 @@ function csscompile() {
     const DEST = './src/_includes/css/'
 
     const processors = [
-        autoprefixer,
-        importcss({modernBrowser: true})
+        importcss({modernBrowser: true}),
+        autoprefixer
     ]
 
     return pipeline(
