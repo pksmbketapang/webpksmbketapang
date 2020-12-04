@@ -1,6 +1,9 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.0/workbox-sw.js')
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js')
 
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
+
+workbox.core.skipWaiting()
+workbox.core.clientsClaim()
 
 workbox.routing.setDefaultHandler(
     new workbox.strategies.NetworkFirst({
@@ -39,7 +42,7 @@ workbox.routing.registerRoute(
                 statuses: [0, 200],
             }),
             new workbox.expiration.ExpirationPlugin({
-                maxAgeSeconds: 60 * 60 * 24 * 7,
+                maxAgeSeconds: 60 * 60 * 24 * 3,
                 maxEntries: 50
             })
         ]
@@ -55,7 +58,7 @@ workbox.routing.registerRoute(
                 statuses: [0, 200],
             }),
             new workbox.expiration.ExpirationPlugin({
-                maxAgeSeconds: 60 * 60 * 24 * 7,
+                maxAgeSeconds: 60 * 60 * 24 * 3,
                 maxEntries: 10
             }),
             new workbox.rangeRequests.RangeRequestsPlugin()
