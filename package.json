@@ -1,7 +1,8 @@
 {
-  "name": "pksmbk",
+  "name": "webpksmbketapang",
   "version": "1.0.0",
-  "description": "",
+  "description": "Website Official DPC Partai Keadilan Sejahtera Kec. Mentawa Baru Ketapang, Kotawaringin Timur, Kalimantan Tengah.",
+  "repository": "github:pksmbketapang/webpksmbketapang",
   "main": "index.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
@@ -11,8 +12,8 @@
     "clean": "npx gulp clean",
     "prestart": "npm run clean"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["eleventy", "amp", "website", "politics", "pks", "indonesia", "nodejs"],
+  "author": "PKS Mentawa Baru Ketapang <webpksmbketapang@gmail.com> (https://pksmbketapang.org/)",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
@@ -25,7 +26,9 @@
     "dotenv": "^8.2.0",
     "eleventy-plugin-typeset": "github:liamfiddler/eleventy-plugin-typeset",
     "gulp": "^4.0.2",
+    "gulp-if": "^3.0.0",
     "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^3.0.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.1.0",
     "html-minifier": "^4.0.0",
