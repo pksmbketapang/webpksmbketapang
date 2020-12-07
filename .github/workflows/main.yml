@@ -3,7 +3,7 @@
 name: build harian
 on:
   schedule:
-    - cron: '0 5,11,17 * * *'
+    - cron: '0 4,10,22 * * *'
 jobs:
   build:
     name: Netlify build
