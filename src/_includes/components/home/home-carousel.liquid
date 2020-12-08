@@ -1,5 +1,5 @@
     <!--Headline Carousel-->
-    <div id="home-carousel" class="col col-12 sm-col-7 md-col-8 px1 pb2">
+    <div id="home-carousel" class="col col-12 md-col-7 px1 pb2">
         <amp-carousel type="slides" width="16" height="10" layout="responsive" autoplay loop>
             {% for item in home-carousel %}
             <a class="relative" href="{{ item.url }}" target="{%- if item.url contains 'http://' or item.url contains 'https://' -%} _blank {%- else -%} _self {%- endif -%}" {%- if item.url contains 'http://' or item.url contains 'https://' -%}rel="noreferrer"{%- endif -%}>

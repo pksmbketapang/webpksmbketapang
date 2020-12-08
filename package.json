@@ -12,7 +12,15 @@
     "clean": "npx gulp clean",
     "prestart": "npm run clean"
   },
-  "keywords": ["eleventy", "amp", "website", "politics", "pks", "indonesia", "nodejs"],
+  "keywords": [
+    "eleventy",
+    "amp",
+    "website",
+    "politics",
+    "pks",
+    "indonesia",
+    "nodejs"
+  ],
   "author": "PKS Mentawa Baru Ketapang <webpksmbketapang@gmail.com> (https://pksmbketapang.org/)",
   "license": "ISC",
   "devDependencies": {
