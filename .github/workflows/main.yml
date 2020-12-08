@@ -1,0 +1,13 @@
+# .github/workflows/main.yml
+
+name: build harian
+on:
+  schedule:
+    - cron: '0 4,10,22 * * *'
+jobs:
+  build:
+    name: Netlify build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_HOOK }}
