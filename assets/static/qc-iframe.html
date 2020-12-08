@@ -11,19 +11,27 @@
     </style>
     <title>QC</title>
 </head>
-<body class="clearfix mxn1">
-    <div class="col col-12 mb2 px1">
+<body class="clearfix">
+    <div class="col col-12 mb2">
         <canvas id="qcmain" class="mx-auto"></canvas>
     </div>
-    <div class="col col-6 mb1 px1">
-        <p id="tidakSah" class="h3 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Suara tidak sah: 0%</p>
+    <div class="col col-12 mxn1 flex flex-wrap content-stretch">
+        <div class="col col-6 mb1 px1">
+            <p id="tidakSah" class="h4 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Suara tidak sah: 0%</p>
+        </div>
+        <div class="col col-6 mb1 px1">
+            <p id="dataMasuk" class="h4 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Data masuk: 0%</p>
+        </div>
+        <div class="col col-12 mb1 px1">
+            <p id="partisipasi" class="h4 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Partisipasi pemilih: 0%</p>
+        </div>
+        <div class="col col-12 mb1 px1">
+            <p id="disclaimer" class="h4 bold center m0 p2" style="color: #ff5000; border: 2px dashed #ff5000; border-radius: 10px;">
+                <small>Sumber: Data Tim Pemenangan Kotim Bercahaya.</small>
+            </p>
+        </div>
     </div>
-    <div class="col col-6 mb1 px1">
-        <p id="dataMasuk" class="h3 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Data masuk: 0%</p>
-    </div>
-    <div class="col col-12 mb1 px1">
-        <p id="partisipasi" class="h3 bold center m0 p2" style="color: white; background-color: #ff5000; border-radius: 10px;">Partisipasi pemilih: 0%</p>
-    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
@@ -35,7 +43,7 @@
             let numbers = []
             let colors = []
             data.rows.forEach(e => {
-                labels.push(`0${e['nopasangan']} - ${e['sloganpasangan']}`)
+                labels.push(`${e['sloganpasangan']} [0${e['nopasangan']}]`)
                 numbers.push(Number(e['perolehansuara']))
                 colors.push(e['colorcode'])
             })
@@ -101,7 +109,7 @@
                 numbers = []
                 $.getJSON(SHEET_PROSENTASE, data => {
                     data.rows.forEach(e => {
-                        labels.push(`0${e['nopasangan']} - ${e['sloganpasangan']}`)
+                        labels.push(`0${e['nopasangan']} - ${e['sloganpasangan']}\n${e['namapasangan']}`)
                         numbers.push(Number(e['perolehansuara']))
                     })
                     qcMainChart.data.datasets[0].data = numbers

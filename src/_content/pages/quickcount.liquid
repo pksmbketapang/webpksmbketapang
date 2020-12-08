@@ -1,0 +1,24 @@
+---
+title: Quick Count Pilkada <br> Kab. Kotawaringin Timur 2020
+layout: layout
+permalink: quickcount.html
+---
+{% include 'components/space.liquid' %}
+<div class="clearfix flex flex-column">
+    <div class="col col-12">
+        <h1 class="m0 h1 center">{{ title }}</h1>
+    </div>
+    <div class="col col-12 flex-auto flex flex-column items-center justify-center">
+        <amp-img src="{{ '/img/rudini-samsudin.png' | prepend: site.url }}" width="400" height="228" layout="fixed" class="mt3"></amp-img>
+        <amp-date-countdown timestamp-seconds="1607493600" layout="flex-item">
+            {% raw %}
+            <template type="amp-mustache">
+                <p class="headings accented center bold p2 mt0" style="font-size: 3rem; border: 5px dashed #ff5000; border-radius: 10px;">
+                    {{h}} jam {{m}} menit {{s}} detik <br> menuju quick count
+                </p>
+            </template>
+            {% endraw %}
+        </amp-date-countdown>
+        <amp-img src="{{ site.logo_txt }}" width="100" height="141" layout="fixed"></amp-img>
+    </div>
+</div>
