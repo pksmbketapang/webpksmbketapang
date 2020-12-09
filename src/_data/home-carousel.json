@@ -1,12 +1,7 @@
 [
     {
-        "title": "Quick Count Pilkada 2020",
-        "image": "/img/quickcount.jpg",
-        "url": "/quickcount"
-    },
-    {
         "title": "Semangat Baru PKS",
         "image": "/img/semangatbaru.jpg",
-        "url": "/soon"
+        "url": "#"
     }
 ]
