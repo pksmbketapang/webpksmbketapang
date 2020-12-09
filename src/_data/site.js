@@ -4,10 +4,12 @@ const prodUrl = 'https://pksmbketapang.org'
 const devUrl = 'http://localhost:8888'
 const baseUrl = current_env === PROD_ENV ? prodUrl : devUrl
 const isProd = current_env === PROD_ENV
+const qcUrl = process.env.QC_URL
 
 module.exports = {
     current_env,
     isProd,
+    qcUrl,
     title: "DPC PKS MB. Ketapang",
     description: "Bersama Melayani Rakyat",
     logo: `${baseUrl}/img/logo/logo.png`,
