@@ -12,6 +12,12 @@
     status = 301
     force = true
 
+[[redirects]]
+    from = "/quickcount"
+    to = "/pilkada2020"
+    status = 301
+    force = true
+
 [[headers]]
     for = "/*"
     [headers.values]
