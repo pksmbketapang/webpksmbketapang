@@ -18,6 +18,12 @@
     status = 301
     force = true
 
+[[redirects]]
+    from = "/pilkada2020"
+    to = "/404"
+    status = 404
+    force = true
+
 [[headers]]
     for = "/*"
     [headers.values]
