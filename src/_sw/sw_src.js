@@ -1,9 +1,6 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.0.0/workbox-sw.js')
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js')
 
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST)
-
-workbox.core.skipWaiting()
-workbox.core.clientsClaim()
 
 workbox.routing.setDefaultHandler(
     new workbox.strategies.NetworkFirst({

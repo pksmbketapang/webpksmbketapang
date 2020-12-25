@@ -4,7 +4,7 @@
     <amp-carousel type="carousel" height="200" layout="fixed-height">
         {% for item in collections.gallery reversed %}
         <a href="{{ item.url }}" title="{{ post.data.title }}">
-            <amp-img src="{%- if item.data.gallery[0].media contains 'http://' or item.data.gallery[0].media contains 'https://' -%}{{ item.data.gallery[0].media }}{%- else -%}{{ item.data.gallery[0].media | prepend: site.url }}{%- endif -%}" width="200" height="200" alt="{{ post.data.title }}"></amp-img>
+            <amp-img src="{%- if item.data.gallery[0].media contains 'http://' or item.data.gallery[0].media contains 'https://' -%}{{ item.data.gallery[0].media }}{%- else -%}{{ item.data.gallery[0].media | prepend: site.url }}{%- endif -%}" width="200" height="200" layout="fixed" alt="{{ post.data.title }}"></amp-img>
         </a>
         {% endfor %}
     </amp-carousel>

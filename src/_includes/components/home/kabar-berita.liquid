@@ -4,7 +4,7 @@
         <h1 class="h2 inline-block bg-accented white mt0 mb2 mx1 p1">{{ includename }}</h1>
     </div>
     <div class="col col-12 clearfix flex flex-wrap content-stretch">
-        {% for post in posts reversed limit: 8 %}
+        {% for post in posts limit: 8 %}
         {% include 'components/kabar-berita-content.liquid' %}
         {% endfor %}
     </div>

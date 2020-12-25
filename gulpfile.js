@@ -1,3 +1,4 @@
+require('dotenv').config
 const gulp = require('gulp')
 const pipeline = require('readable-stream').pipeline
 
@@ -5,6 +6,8 @@ const pipeline = require('readable-stream').pipeline
 const sass = require('gulp-sass')
 sass.compiler = require('sass')
 const replace = require('gulp-replace')
+const oncondition = require('gulp-if')
+const purge = require('gulp-purgecss')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const importcss = require('postcss-import-url')
@@ -23,6 +26,9 @@ function csscompile() {
         sass(),
         postcss(processors),
         replace('!important', ''),
+        oncondition(process.env.ELEVENTY_ENV == 'prod', purge({
+            content: ['src/**/*.liquid'],
+        })),
         gulp.dest(DEST)
     )
 }
@@ -37,9 +43,7 @@ function buildsw(cb) {
         globDirectory: 'dist',
         globPatterns: [
             '**/logo.png',
-            '**/logo-w.png',
-            '**/logo-t.png',
-            '**/logo-tw.png',
+            '**/logo-*.png',
             '**/supriyanto.png',
             '**/rudini.png',
             '**/samsudin.png',
