@@ -43,7 +43,7 @@
     "lodash": "^4.17.20",
     "moment": "^2.29.1",
     "postcss": "^8.1.14",
-    "postcss-import-url": "^5.1.0",
+    "postcss-import-url": "^6.0.0",
     "readable-stream": "^3.6.0",
     "sass": "^1.29.0",
     "workbox-build": "^6.0.2"
