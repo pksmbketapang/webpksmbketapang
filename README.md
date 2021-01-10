@@ -1,9 +1,11 @@
-![Logo PKS](https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_150,h_150,c_fit/https://pksmbketapang.org/img/logo/logo-t.png)
+![Logo PKS](https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_150,c_fit/https://pksmbketapang.org/img/logo/logo-f.png)
 
-# Tentang
+# DPC PKS Mentawa Baru Ketapang
+
+## Tentang
 Website resmi Partai Keadilan Sejahtera (PKS), Kec. Mentawa Baru Ketapang, Kabupaten Kotawaringin Timur, Kalimantan Tengah. Dibangun menggunakan [Eleventy](https://11ty.dev), [AMP](https://amp.dev), dan berbasis [NodeJS](https://nodejs.org/). Kode sumber dihosting di [Github](https://github.com/pksmbketapang/webpksmbketapang) dan website dihosting di [Netlify](https://netlify.com/).
 
-# Membangun website ini
+## Membangun website ini
 Sebelumnya, fork atau clone terlebih dahulu:
 ```
 git clone https://github.com/pksmbketapang/webpksmbketapang.git
