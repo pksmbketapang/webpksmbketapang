@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/layout'
-import SlideShow from '../components/slideshow'
 import styles from '../styles/index.module.css'
 
 import MenuItems from '../data/menu.json'
