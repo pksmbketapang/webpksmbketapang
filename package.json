@@ -10,8 +10,7 @@
     "start": "next start"
   },
   "keywords": [
-    "eleventy",
-    "amp",
+    "nextjs",
     "website",
     "politics",
     "pks",
