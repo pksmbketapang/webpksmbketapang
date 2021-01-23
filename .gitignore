@@ -1,30 +1,35 @@
-# Ignore installed npm modules
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Ignore build tool output, e.g. code coverage
-.nyc_output/
-coverage/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# Ignore API documentation
-api-docs/
+# testing
+/coverage
 
-# Ignore folders from source code editors
-.vscode
-.idea
+# next.js
+/.next/
+/out/
 
-# Ignore eleventy output when doing local tests
-_site/
-.cache/
-dist/
+# production
+/build
 
-# Local Netlify folder
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
 .netlify
-
-#.env
-.env
-
-#debug.log
-debug.log
-
-#CSS output
-src/_includes/css/main.css

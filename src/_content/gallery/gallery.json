@@ -1,5 +1,0 @@
-{
-    "tags": ["gallery", "feed"],
-    "layout": "amp-story",
-    "permalink": "gallery/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html"
-}
