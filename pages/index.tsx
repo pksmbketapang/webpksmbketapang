@@ -3,16 +3,19 @@ import Image from 'next/image'
 import Layout from '../components/layout'
 import styles from '../styles/index.module.css'
 
+import { getSortedPostsData } from '../data/posts'
 import MenuItems from '../data/menu.json'
 export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
     return {
         props: {
-            MenuItems
+            MenuItems,
+            allPostsData
         }
     }
 }
 
-export default function index({MenuItems}) {
+export default function index({ MenuItems, allPostsData }) {
     return (
         <Layout>
             <section className={styles.index_top_grid}>
@@ -55,7 +58,17 @@ export default function index({MenuItems}) {
                     )}
                 </div>
             </section>
-            <h1>Hello Next.JS!</h1>
+            <section>
+                <h1>Kabar Berita</h1>
+                <div>
+                    {allPostsData.map(({ id, date, title }) => (
+                        <div key={ id }>
+                            <h2>{ title }</h2>
+                            <p>{ date }</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
         </Layout>
     )
 }
