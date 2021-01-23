@@ -37,5 +37,32 @@
 }
 
 .index_menu_item {
-    @apply bg-accented font-cHeadings font-bold text-white text-center text-xl grid place-items-center rounded-lg p-4 shadow hover:shadow-lg;
+    @apply transition bg-accented hover:bg-black font-cHeadings font-bold text-white text-center text-xl grid place-items-center rounded-lg p-4 shadow hover:shadow-lg;
+}
+
+.index_news_title {
+    @apply font-cHeadings font-extrabold text-2xl lg:text-4xl mb-4;
+    span {
+        @apply hover:text-accented transition;
+    }
+}
+
+.index_news_grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.index_news_grid_item {
+    @apply flex flex-col bg-cover bg-center rounded-lg shadow hover:shadow-lg p-4;
+
+    h2 {
+        @apply flex-1 font-cHeadings font-extrabold text-xl text-white mb-16;
+    }
+
+    h3 {
+        @apply uppercase font-bold text-white text-sm truncate mb-2;
+    }
+
+    p {
+        @apply text-sm text-white;
+    }
 }

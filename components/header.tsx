@@ -11,8 +11,8 @@ export default function Header() {
                         <Image
                             src="/logo/pks.png"
                             alt="logo"
-                            width={75}
-                            height={75} 
+                            width={60}
+                            height={60} 
                         />
                         <div className={styles.header_logo_title}>
                             <h1>PKS</h1>

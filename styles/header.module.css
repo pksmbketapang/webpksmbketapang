@@ -13,9 +13,9 @@
 .header_logo_title {
     @apply ml-2;
     h1 {
-        @apply font-cHeadings font-extrabold text-4xl;
+        @apply font-cHeadings font-extrabold text-3xl;
     }
     p {
-        @apply font-cHeadings font-bold text-lg;
+        @apply font-cHeadings font-bold text-base;
     }
 }

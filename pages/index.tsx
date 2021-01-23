@@ -58,14 +58,19 @@ export default function index({ MenuItems, allPostsData }) {
                     )}
                 </div>
             </section>
-            <section>
-                <h1>Kabar Berita</h1>
-                <div>
-                    {allPostsData.map(({ id, date, title }) => (
-                        <div key={ id }>
-                            <h2>{ title }</h2>
-                            <p>{ date }</p>
-                        </div>
+            <section >
+                <h1 className={styles.index_news_title}>
+                    <span>Kabar Berita</span>
+                </h1>
+                <div className={styles.index_news_grid}>
+                    {allPostsData.map(({ id, title, description, date, image }) => (
+                        <Link href={`/posts/${id}`} key={ id }>
+                            <a className={styles.index_news_grid_item} style={{backgroundImage:`url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_600,h_375,b_black,o_50,c_fill,f_auto/${image})`}}>
+                                <h3 title={ description }>{ description }</h3>
+                                <h2><span>{ title }</span></h2>
+                                <p>{ date }</p>
+                            </a>
+                        </Link>
                     ))}
                 </div>
             </section>
