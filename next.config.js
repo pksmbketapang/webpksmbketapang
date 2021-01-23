@@ -1,5 +1,7 @@
-
-          module.exports = {
-            target: 'serverless'
-          }
+module.exports = {
+  target: 'serverless',
+  images: {
+    domains: ['source.unsplash.com']
+  }
+}
         

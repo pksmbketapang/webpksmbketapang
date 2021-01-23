@@ -16,8 +16,11 @@ export default function index({MenuItems}) {
     return (
         <Layout>
             <section className={styles.index_top_grid}>
-                <div className={styles.index_hero_grid}>
-                    slideshow here
+                <div className={styles.index_hero_grid} style={{ backgroundImage:'url("https://source.unsplash.com/random/1600x900")' }}>
+                    <div className={styles.index_hero_grid_title}>
+                        <p className="uppercase text-sm">Subjudul</p>
+                        <h1>Artikel Tersemat</h1>
+                    </div>
                 </div>
                 <div className={styles.index_menu_grid}>
                     <Link href="/aleg">

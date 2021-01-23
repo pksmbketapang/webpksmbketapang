@@ -5,7 +5,7 @@ import styles from '../styles/header.module.css'
 export default function Header() {
     return (
         <header className={styles.header}>
-            <nav>
+            <nav className={styles.header_nav}>
                 <Link href="/">
                     <a className={styles.header_logo}>
                         <Image
