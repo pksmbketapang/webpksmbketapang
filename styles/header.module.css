@@ -1,0 +1,21 @@
+.header {
+    @apply fixed bg-white shadow hover:shadow-lg w-screen z-10;
+}
+
+.header_nav {
+    @apply max-w-screen-xl mx-auto p-4;
+}
+
+.header_logo {
+    @apply flex flex-row items-center;
+}
+
+.header_logo_title {
+    @apply ml-2;
+    h1 {
+        @apply font-cHeadings font-extrabold text-3xl;
+    }
+    p {
+        @apply font-cHeadings font-bold text-base;
+    }
+}

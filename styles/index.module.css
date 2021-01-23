@@ -1,0 +1,68 @@
+.index_top_grid {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-4;
+}
+
+.index_hero_grid {
+    @apply col-span-1 lg:col-span-2 rounded-lg shadow hover:shadow-lg bg-cover bg-center h-48 md:h-64 lg:h-auto relative;
+}
+
+.index_hero_grid_title {
+    @apply absolute bottom-0 inset-x-0 text-white p-4;
+    h1 {
+        @apply font-cHeadings font-extrabold text-2xl;
+    }
+}
+
+.index_menu_grid {
+    @apply grid grid-cols-2 gap-4;
+}
+
+.index_menu_item_aleg {
+    @apply col-span-2;
+    > div {
+        @apply p-2;
+    }
+
+    img {
+        @apply rounded-full object-cover object-top;
+    }
+
+    p {
+        @apply font-sans font-normal text-sm;
+    }
+}
+
+.index_menu_item_slogan {
+    @apply row-span-2;
+}
+
+.index_menu_item {
+    @apply transition bg-accented hover:bg-black font-cHeadings font-bold text-white text-center text-xl grid place-items-center rounded-lg p-4 shadow hover:shadow-lg;
+}
+
+.index_news_title {
+    @apply font-cHeadings font-extrabold text-2xl lg:text-4xl mb-4;
+    span {
+        @apply hover:text-accented transition;
+    }
+}
+
+.index_news_grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.index_news_grid_item {
+    @apply flex flex-col bg-cover bg-center rounded-lg shadow hover:shadow-lg p-4;
+
+    h2 {
+        @apply flex-1 font-cHeadings font-extrabold text-xl text-white mb-16;
+    }
+
+    h3 {
+        @apply uppercase font-bold text-white text-sm truncate mb-2;
+    }
+
+    p {
+        @apply text-sm text-white;
+    }
+}

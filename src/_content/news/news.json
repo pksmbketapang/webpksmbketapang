@@ -1,5 +1,0 @@
-{
-    "tags": ["news", "feed"],
-    "layout": "content",
-    "permalink": "news/{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html"
-}
