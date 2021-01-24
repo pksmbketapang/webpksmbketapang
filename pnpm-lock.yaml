@@ -1,6 +1,8 @@
 dependencies:
+  '@tailwindcss/typography': 0.4.0_tailwindcss@2.0.2
   autoprefixer: 10.2.3_postcss@8.2.4
   gray-matter: 4.0.2
+  moment: 2.29.1
   next: 10.0.5_c39e9db791ea05e3ec4e0e74abb7a6b5
   postcss: 8.2.4
   postcss-flexbugs-fixes: 5.0.2_postcss@8.2.4
@@ -1277,6 +1279,18 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-mBdw4EgsNB9tE7pZ/YIhfkZbkbXzGjcaeJxGBKN0HsJwMJCNdJKnxPC2a29rvaovHnyFD6s91HVJ9V7b1GH/XQ==
+  /@tailwindcss/typography/0.4.0_tailwindcss@2.0.2:
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      lodash.uniq: 4.5.0
+      tailwindcss: 2.0.2_d337930ac9ab3cde8278bf6b015e1ea7
+    dev: false
+    peerDependencies:
+      tailwindcss: 2.0.0-alpha.24 || ^2.0.0
+    resolution:
+      integrity: sha512-3BfOYT5MYNEq81Ism3L2qu/HRP2Q5vWqZtZRQqQrthHuaTK9qpuPfbMT5WATjAM5J1OePKBaI5pLoX4S1JGNMQ==
   /@types/json-schema/7.0.7:
     dev: false
     resolution:
@@ -3898,6 +3912,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-DZnzzNem0mHRm9rrkkUAXShYCOc=
+  /lodash.castarray/4.4.0:
+    dev: false
+    resolution:
+      integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=
   /lodash.includes/4.3.0:
     dev: true
     resolution:
@@ -3915,13 +3933,16 @@ packages:
     resolution:
       integrity: sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
   /lodash.isplainobject/4.0.6:
-    dev: true
     resolution:
       integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
   /lodash.isstring/4.0.1:
     dev: true
     resolution:
       integrity: sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
+  /lodash.merge/4.6.2:
+    dev: false
+    resolution:
+      integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
   /lodash.once/4.1.1:
     dev: true
     resolution:
@@ -3951,6 +3972,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-NkJefukL5KpeJ7zruFt9EepHqlc=
+  /lodash.uniq/4.5.0:
+    dev: false
+    resolution:
+      integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
   /lodash/4.17.20:
     dev: false
     resolution:
@@ -4233,6 +4258,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-1lM+BMLGuDfsdwf3rsgBSrxJwAZHFIrQ8YR61xIqdHo0uNKI9M52wNpHSrliZATJp51On6JD0AfRxd4YGSU0lw==
+  /moment/2.29.1:
+    dev: false
+    resolution:
+      integrity: sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
   /move-concurrently/1.0.1:
     dependencies:
       aproba: 1.2.0
@@ -6840,10 +6869,12 @@ packages:
       integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
 specifiers:
   '@netlify/plugin-nextjs': ^1.0.8
+  '@tailwindcss/typography': ^0.4.0
   '@types/node': ^14.14.22
   '@types/react': ^17.0.0
   autoprefixer: ^10.2.3
   gray-matter: ^4.0.2
+  moment: ^2.29.1
   next: ^10.0.5
   postcss: ^8.2.4
   postcss-flexbugs-fixes: ^5.0.2
