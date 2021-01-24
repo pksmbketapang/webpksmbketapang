@@ -1,0 +1,7 @@
+.header {
+    @apply grid place-items-center h-48 lg:h-64 bg-accented rounded-lg shadow hover:shadow-lg;
+}
+
+.header_title {
+    @apply font-cHeadings font-extrabold text-2xl lg:text-4xl text-white text-center;
+}

@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     return (
         <>
         <Head>
-            <title>PKS MB. Ketapang</title>
+            <title>PKS MB Ketapang | Bersama Melayani Rakyat</title>
         </Head>
 
         <Header />

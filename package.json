@@ -20,8 +20,10 @@
   "author": "PKS Mentawa Baru Ketapang <webpksmbketapang@gmail.com> (https://pksmbketapang.org/)",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.3",
     "gray-matter": "^4.0.2",
+    "moment": "^2.29.1",
     "next": "^10.0.5",
     "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",

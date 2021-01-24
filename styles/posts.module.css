@@ -1,0 +1,26 @@
+.header {
+    @apply max-w-screen-lg mx-auto mb-8;
+}
+
+.title {
+    @apply font-cHeadings font-extrabold text-2xl lg:text-4xl lg:text-center mb-4;
+    span {
+        @apply transition hover:text-accented;
+    }
+}
+
+.description {
+    @apply uppercase font-bold text-accented lg:text-center text-sm lg:text-base mb-2;
+}
+
+.date {
+    @apply lg:text-center mb-4;
+}
+
+.featuredImage {
+    @apply rounded-lg object-cover object-center shadow hover:shadow-lg;
+}
+
+.content {
+    @apply prose prose-lg lg:prose-xl mx-auto;
+}

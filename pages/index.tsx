@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from '../components/layout'
+import Date from '../components/date'
 import styles from '../styles/index.module.css'
 
 import { getSortedPostsData } from '../data/posts'
@@ -63,12 +64,12 @@ export default function index({ MenuItems, allPostsData }) {
                     <span>Kabar Berita</span>
                 </h1>
                 <div className={styles.index_news_grid}>
-                    {allPostsData.map(({ id, title, description, date, image }) => (
+                    {allPostsData.slice(0,8).map(({ id, title, description, date, image }) => (
                         <Link href={`/posts/${id}`} key={ id }>
-                            <a className={styles.index_news_grid_item} style={{backgroundImage:`url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_600,h_375,b_black,o_50,c_fill,f_auto/${image})`}}>
+                            <a className={styles.index_news_grid_item} style={{backgroundImage:`url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_300,h_200,b_black,o_50,c_fill,f_auto/${image})`}}>
                                 <h3 title={ description }>{ description }</h3>
                                 <h2><span>{ title }</span></h2>
-                                <p>{ date }</p>
+                                <p><Date dateString={ date } /></p>
                             </a>
                         </Link>
                     ))}
