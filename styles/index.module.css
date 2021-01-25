@@ -3,6 +3,7 @@
 }
 
 .index_hero_grid {
+    background-image: url('https://source.unsplash.com/random/1600x900');
     @apply col-span-1 lg:col-span-2 rounded-lg shadow hover:shadow-lg bg-cover bg-center h-48 md:h-64 lg:h-auto relative;
 }
 
@@ -24,7 +25,7 @@
     }
 
     img {
-        @apply rounded-full object-cover object-top;
+        @apply rounded-full object-cover object-top w-24 h-24;
     }
 
     p {

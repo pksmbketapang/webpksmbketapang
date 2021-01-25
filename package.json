@@ -23,8 +23,14 @@
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.3",
     "gray-matter": "^4.0.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "lqip-loader": "^2.2.1",
     "moment": "^2.29.1",
     "next": "^10.0.5",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "postcss": "^8.2.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import-url": "^6.0.0",
@@ -34,7 +40,10 @@
     "react-dom": "^17.0.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1",
-    "tailwindcss": "^2.0.2"
+    "responsive-loader": "^2.3.0",
+    "sharp": "^0.27.0",
+    "tailwindcss": "^2.0.2",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "@netlify/plugin-nextjs": "^1.0.8",

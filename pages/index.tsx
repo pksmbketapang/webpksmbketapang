@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Layout from '../components/layout'
 import Date from '../components/date'
 import styles from '../styles/index.module.css'
@@ -20,7 +19,7 @@ export default function index({ MenuItems, allPostsData }) {
     return (
         <Layout>
             <section className={styles.index_top_grid}>
-                <div className={styles.index_hero_grid} style={{ backgroundImage:'url("https://source.unsplash.com/random/1600x900")' }}>
+                <div className={styles.index_hero_grid}>
                     <div className={styles.index_hero_grid_title}>
                         <p className="uppercase text-sm">Subjudul</p>
                         <h1>Artikel Tersemat</h1>
@@ -29,12 +28,7 @@ export default function index({ MenuItems, allPostsData }) {
                 <div className={styles.index_menu_grid}>
                     <Link href="/aleg">
                         <a className={[styles.index_menu_item, styles.index_menu_item_aleg].join(' ')}>
-                            <Image
-                                src='/supriyanto.jpg'
-                                alt='H. Suprianto, SE. MM'
-                                width={100}
-                                height={100}
-                             />
+                            <img src={require('../public/supriyanto.jpg?lqip&resize&size=100')} alt='H. Suprianto, SE. MM' />
                              <div>
                                 <h1>H. Suprianto, SE, MM</h1>
                                 <p>
