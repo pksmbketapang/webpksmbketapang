@@ -66,7 +66,7 @@ export default function index({ MenuItems, allPostsData }) {
                 <div className={styles.index_news_grid}>
                     {allPostsData.slice(0,8).map(({ id, title, description, date, image }) => (
                         <Link href={`/posts/${id}`} key={ id }>
-                            <a className={styles.index_news_grid_item} style={{backgroundImage:`url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_300,h_200,b_black,o_50,c_fill,f_auto/${image})`}}>
+                            <a className={styles.index_news_grid_item} style={{backgroundImage: `url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_300,h_200,b_black,o_50,c_fill,f_auto/${ image })`}}>
                                 <h3 title={ description }>{ description }</h3>
                                 <h2><span>{ title }</span></h2>
                                 <p><Date dateString={ date } /></p>

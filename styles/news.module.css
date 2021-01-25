@@ -1,7 +1,27 @@
 .header {
-    @apply grid place-items-center h-48 lg:h-64 bg-accented rounded-lg shadow hover:shadow-lg;
+    @apply grid place-items-center h-48 lg:h-64 bg-accented rounded-lg shadow hover:shadow-lg mb-8;
 }
 
 .header_title {
     @apply font-cHeadings font-extrabold text-2xl lg:text-4xl text-white text-center;
+}
+
+.main {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4;
+}
+
+.main_items {
+    @apply flex flex-col bg-cover bg-center rounded-lg shadow hover:shadow-lg p-4;
+
+    h2 {
+        @apply flex-1 font-cHeadings font-extrabold text-xl text-white mb-16;
+    }
+
+    h3 {
+        @apply uppercase font-bold text-white text-sm truncate mb-2;
+    }
+
+    p {
+        @apply text-sm text-white;
+    }
 }
