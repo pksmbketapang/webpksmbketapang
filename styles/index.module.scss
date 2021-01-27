@@ -3,7 +3,7 @@
 }
 
 .index_hero_grid {
-    background-image: url('https://source.unsplash.com/random/1600x900');
+    background-image: url('https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_827,h_516,c_fit,f_auto/https://source.unsplash.com/1600x900/weekly?government');
     @apply col-span-1 lg:col-span-2 rounded-lg shadow hover:shadow-lg bg-cover bg-center h-48 md:h-64 lg:h-auto relative;
 }
 
@@ -56,10 +56,10 @@
     @apply flex flex-col bg-cover bg-center rounded-lg shadow hover:shadow-lg p-4;
 
     h2 {
-        @apply flex-1 font-cHeadings font-extrabold text-xl text-white mb-16;
+        @apply flex-1 font-cHeadings font-extrabold text-xl text-white mb-16 transition;
     }
 
-    h3 {
+    .news_item_description {
         @apply uppercase font-bold text-white text-sm truncate mb-2;
     }
 

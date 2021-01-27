@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
 import Date from '../components/date'
-import styles from '../styles/index.module.css'
+import styles from '../styles/index.module.scss'
 
 import { getSortedPostsData } from '../data/posts'
 import MenuItems from '../data/menu.json'
@@ -61,7 +61,7 @@ export default function index({ MenuItems, allPostsData }) {
                     {allPostsData.slice(0,8).map(({ id, title, description, date, image }) => (
                         <Link href={`/posts/${id}`} key={ id }>
                             <a className={styles.index_news_grid_item} style={{backgroundImage: `url(https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_300,h_200,b_black,o_50,c_fill,f_auto/${ image })`}}>
-                                <h3 title={ description }>{ description }</h3>
+                                <p className={styles.news_item_description} title={ description }>{ description }</p>
                                 <h2><span>{ title }</span></h2>
                                 <p><Date dateString={ date } /></p>
                             </a>

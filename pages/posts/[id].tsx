@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import Layout from '../../components/layout'
 import Date from '../../components/date'
-import styles from '../../styles/posts.module.css'
+import styles from '../../styles/posts.module.scss'
 
 import { getAllPostsIds, getPostsData } from '../../data/posts'
 
@@ -39,7 +39,7 @@ export default function Posts({ postData }) {
                         <Date dateString={ postData.date } />
                     </p>
                     <img 
-                        src={`https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_1280,h_920,f_auto/${postData.image}`}
+                        src={`https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_1024,h_737,c_fit,f_auto/${postData.image}`}
                         width={1280}
                         height={920}
                         className={styles.featuredImage}
