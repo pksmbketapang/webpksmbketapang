@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Layout from '../components/layout'
 import Date from '../components/date'
 import styles from '../styles/index.module.scss'
@@ -28,7 +29,12 @@ export default function index({ MenuItems, allPostsData }) {
                 <div className={styles.index_menu_grid}>
                     <Link href="/aleg">
                         <a className={[styles.index_menu_item, styles.index_menu_item_aleg].join(' ')}>
-                            <img src={require('../public/supriyanto.jpg?lqip&resize&size=100')} alt='H. Suprianto, SE. MM' />
+                            <Image 
+                                src='/supriyanto.jpg'
+                                alt='H. Suprianto, SE. MM'
+                                width={75}
+                                height={75} 
+                            />
                              <div>
                                 <h1>H. Suprianto, SE, MM</h1>
                                 <p>

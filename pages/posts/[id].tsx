@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Image from 'next/image'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
 import styles from '../../styles/posts.module.scss'
@@ -38,10 +38,11 @@ export default function Posts({ postData }) {
                     <p className={styles.date}>
                         <Date dateString={ postData.date } />
                     </p>
-                    <img 
-                        src={`https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/w_1024,h_737,c_fit,f_auto/${postData.image}`}
-                        width={1280}
-                        height={920}
+                    <Image 
+                        src={`https://res.cloudinary.com/dpc-pks-mb-ketapang/image/fetch/c_fit,f_auto/${postData.image}`}
+                        alt={postData.title}
+                        width={1024}
+                        height={737}
                         className={styles.featuredImage}
                     />
                 </header>
