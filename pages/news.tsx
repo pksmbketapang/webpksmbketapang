@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../components/layout'
 import Date from '../components/date'
-import styles from '../styles/news.module.css'
+import styles from '../styles/news.module.scss'
 
 const page = {
     title: 'Bersama Melayani Rakyat'

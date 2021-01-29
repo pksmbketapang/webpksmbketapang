@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import styles from '../styles/header.module.css'
+import Image from 'next/image'
+import styles from '../styles/header.module.scss'
 
 export default function Header() {
     return (
@@ -7,8 +8,8 @@ export default function Header() {
             <nav className={styles.header_nav}>
                 <Link href="/">
                     <a className={styles.header_logo}>
-                        <img
-                            src={require('../public/logo/pks.png?lqip&resize&size=60')}
+                        <Image
+                            src='/logo/pks.png'
                             alt="logo"
                             width={60}
                             height={60} 
