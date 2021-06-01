@@ -28,7 +28,7 @@
     "@11ty/eleventy-cache-assets": "^2.0.3",
     "@ampproject/eleventy-plugin-amp": "^0.5.3",
     "autoprefixer": "^10.0.4",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.9",
     "cross-env": "^7.0.3",
     "del": "^6.0.0",
     "dotenv": "^8.2.0",
